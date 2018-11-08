@@ -1,12 +1,13 @@
 //
 //  AppDelegate.swift
-//  kbcuekt
+//  kbucket
 //
-//  Created by 김미혜 on 2018. 10. 21..
-//  Copyright © 2018년 kikiplus. All rights reserved.
+//  Created by 김미혜 on 2017. 6. 16..
+//  Copyright © 2017년 kikiplus. All rights reserved.
 //
 
 import UIKit
+//import GoogleMobileAds
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -16,6 +17,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        // let id = ContextUtils.KBUCKET_AD_UNIT_ID
+        // GADMobileAds.configure(withApplicationID: id)
+        
         return true
     }
 

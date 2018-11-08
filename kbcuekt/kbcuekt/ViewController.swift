@@ -141,10 +141,10 @@ class ViewController: UIViewController , IHttpReceive , PopupProtocol {
                 changeView(viewName: "ShareListViewCtlr")
                 break
             case UPDATE_USER://사용자 정보 없데이트
-//                let userUpdateTask : UserUpdateTask = UserUpdateTask(url: ContextUtils.KBUCKET_UPDATE_USER, post: true, receive: self)
-//                let user = getUserData()
-//                let sendData = StringUtils.getHTTPPostSendData(sendData: user.toDictionary() )
-//                userUpdateTask.actionTaskWithData(data : sendData )
+                let userUpdateTask : UserUpdateTask = UserUpdateTask(url: ContextUtils.KBUCKET_UPDATE_USER, post: true, receive: self)
+                let user = getUserData()
+                let sendData = StringUtils.getHTTPPostSendData(sendData: user.toDictionary() )
+                userUpdateTask.actionTaskWithData(data : sendData )
                 break
             case REQUEST_AI:
                 let userNickName : String = UserDefault.read(key: ContextUtils.KEY_USER_NICKNAME)
@@ -164,7 +164,7 @@ class ViewController: UIViewController , IHttpReceive , PopupProtocol {
 //    //             KProgressDialog.setDataLoadingDialog(this, false, null, false);
                 DispatchQueue.main.async {
                     self.mAIPopup = CustomPopup(listener: self)
-//                    self.mAIPopup?.showDialog(message: obj, id: ConfirmPopup.POPUP_AI)
+                    self.mAIPopup?.showDialog(message: obj, id: ConstPopup.POPUP_AI)
                     }
                 break
             case CHECK_VERSION://버전 체크
@@ -182,17 +182,13 @@ class ViewController: UIViewController , IHttpReceive , PopupProtocol {
     func onHttpReceive(type: Int, actionId: Int, data: Data) {
         KLog.d(tag : TAG, msg : "@@ onHttpReceive actionId: " + String(actionId))
         KLog.d(tag : TAG, msg : "@@ onHttpReceive  type: " + String(type))
-        var isValid : Bool = false
         if (actionId == ConstHTTP.REQUEST_AI) {
             if (type == ConstHTTP.HTTP_OK) {
                 do {
                         if let jsonString = try JSONSerialization.jsonObject(with: data, options: .allowFragments) as? [String: Any] {
-                            if jsonString != nil {
-                                isValid = jsonString["isValid"] as! Bool
-                                let message = jsonString["replay"] as! String
-                                handleMessage(what: RESPOND_AI, obj: message)
-                            }
-                        }
+                            let message = jsonString["replay"] as! String
+                            handleMessage(what: RESPOND_AI, obj: message)
+                    }
                 } catch {
                     print("JSON 파상 에러")
                      handleMessage(what: FAIL_AI, obj: "")
@@ -209,14 +205,14 @@ class ViewController: UIViewController , IHttpReceive , PopupProtocol {
              }
         } else if (actionId == ConstHTTP.UPDATE_VERSION){
             if (type == ConstHTTP.HTTP_OK) {
-                
                 do {
                     if let jsonString = try JSONSerialization.jsonObject(with: data, options: .allowFragments) as? [String: Any] {
-                        if jsonString != nil {
+                        
+                        if jsonString.count > 0 {
                             let versionName = jsonString["versionName"] as! String
                             let forceYN =  jsonString["forceYN"] as! String
                            
-                            if (versionName != nil && versionName != "null" ) {
+                            if (versionName.count > 0 ) {
                                 if (StringUtils.compareVersion(srcVersion: ContextUtils.VERSION_NAME, newVersion: versionName) > 0) {
                                     print("0")
                                     if (forceYN == "Y") {
@@ -224,13 +220,13 @@ class ViewController: UIViewController , IHttpReceive , PopupProtocol {
                                         let content = AppUtils.localizedString(forKey : "update_popup_content_y")
                                         
                                         let basicPopup = BasicPopup()
-//                                        basicPopup.showMessage(title: title, content: content, vc: self, id: ConstPopup.POPUP_UPDATE_FORCE)
+                                        basicPopup.showMessage(title: title, content: content, vc: self, id: ConstPopup.POPUP_UPDATE_FORCE)
                                     } else {
                                         let title = AppUtils.localizedString(forKey : "update_popup_title")
                                         let content = AppUtils.localizedString(forKey : "update_popup_content_n")
                                         
                                         let confirmPopup = ConfirmPopup()
-//                                        confirmPopup.showMessage(title: title, content: content, vc: self, id : ConstPopup.POPUP_UPDATE_SELECT)
+                                        confirmPopup.showMessage(title: title, content: content, vc: self, id : ConstPopup.POPUP_UPDATE_SELECT)
                                       
                                     }
                                 } else {

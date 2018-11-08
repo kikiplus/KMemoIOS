@@ -98,13 +98,13 @@ EventProtocol {
     /**
      * DB 데이타 동기화하기(삭제)
      */
-    func removeDBData(Content : String) {
-        KLog.d(tag: TAG, msg: "@@ remove Data Contents : " + Content);
+    func removeDBData(data : String) {
+        KLog.d(tag: TAG, msg: "@@ remove Data Contents : " + data);
         if(mSqlQuery != nil){
-           mSqlQuery?.deleteUserBucket(contents: Content)
+            mSqlQuery?.deleteUserBucket(contents: data)
         }
         
-        let inContainsBucket : Bool = mSqlQuery?.containsKbucket(memoContents: Content) ?? false
+        let inContainsBucket : Bool = mSqlQuery?.containsKbucket(memoContents: data) ?? false
         if(!inContainsBucket){
             let message = AppUtils.localizedString(forKey: "share_delete_popup_ok")
             Toast.showToast(message: message)
@@ -176,7 +176,7 @@ EventProtocol {
             addDBData(Content: data)
             break
         case 1://삭제
-            removeDBData(Content: data)
+            removeDBData(data: data)
             break
         default:
             break

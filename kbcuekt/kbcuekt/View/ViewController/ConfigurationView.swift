@@ -128,6 +128,8 @@ class ConfigurationView : UIViewController , IHttpReceive {
                     if let jsonString = try JSONSerialization.jsonObject(with: data, options: []) as? [String: Any] {
                             let versionCode : Int = jsonString["versionCode"] as! Int
                             let versionName : String = jsonString["versionName"] as! String
+                        KLog.d(tag : TAG, msg : "@@ versionCode : " + String(versionCode))
+                        KLog.d(tag : TAG, msg : "@@ versionNmae : " + String(versionName))
                     }
                 } catch {
                     KLog.d(tag : TAG, msg : "@@ Exception : ")

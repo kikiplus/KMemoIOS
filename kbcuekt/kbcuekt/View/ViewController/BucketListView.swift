@@ -166,7 +166,7 @@ class BucketListView: UIViewController , IHttpReceive ,  UITableViewDelegate, UI
 
                     if (isValid == true) {
                         // 이미지가 있는 경우 전송함
-                        if (mDataList[mShareIdx].mImageName != nil && mDataList[mShareIdx].mImageName.count > 0) {
+                        if (mDataList[mShareIdx].mImageName.count > 0) {
                             handleMessage(what: UPLOAD_IMAGE, obj: "")
                         } else {
                             let message = AppUtils.localizedString(forKey : "write_bucekt_success_string")
@@ -184,10 +184,8 @@ class BucketListView: UIViewController , IHttpReceive ,  UITableViewDelegate, UI
                 let message = AppUtils.localizedString(forKey : "upload_image_fail_string")
                 handleMessage(what: TOAST_MASSEGE, obj: message)
             } else {
-                if (isValid == true) {
-                    let message = AppUtils.localizedString(forKey : "write_bucekt_success_string")
-                    handleMessage(what: TOAST_MASSEGE, obj: message)
-                }
+                let message = AppUtils.localizedString(forKey : "write_bucekt_success_string")
+                handleMessage(what: TOAST_MASSEGE, obj: message)
             }
         }
     }

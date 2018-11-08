@@ -37,6 +37,7 @@ class WriteView : UIViewController,  UITableViewDelegate, UITableViewDataSource,
         mTableView.delegate = self
         mTableView.dataSource = self
         initialize()
+        
     }
     
     func initialize(){
@@ -50,7 +51,7 @@ class WriteView : UIViewController,  UITableViewDelegate, UITableViewDataSource,
             for kbucket in bucketList!{
                 KLog.d(tag: TAG, msg: "realm DB mContent : " + kbucket.mContent)
                 KLog.d(tag: TAG, msg: "realm DB mCompleteYN : " + kbucket.mCompleteYN)
-                if  (kbucket.mContent != nil && kbucket.mCompleteYN == "Y") {
+                if  (kbucket.mContent.count > 0 && kbucket.mCompleteYN == "Y") {
                     continue
                 }
                 mDataList.append(kbucket.mContent)
@@ -75,7 +76,7 @@ class WriteView : UIViewController,  UITableViewDelegate, UITableViewDataSource,
     func sort() {
         let strSort = UserDefault.read(key: ContextUtils.KBUCKET_SORT_KEY)
         KLog.d(tag : TAG, msg: "Sort : " + strSort);
-        if (strSort == nil) {
+        if (strSort.count > 0) {
             self.mTableView.reloadData()
             return
         }
@@ -105,7 +106,8 @@ class WriteView : UIViewController,  UITableViewDelegate, UITableViewDataSource,
             }else{
                 mDataList.append(strText)
                 if(mSqlQuery != nil){
-                    mSqlQuery?.insertUserSetting(contents: strText, date: "", completeYN: "N", completedDate: "")
+                    let result : Bool = mSqlQuery?.insertUserSetting(contents: strText, date: "", completeYN: "N", completedDate: "") ?? false
+                    KLog.d(tag : TAG, msg: "@@ insert Data result : " + String(result))
                 }
                 
             }
@@ -141,10 +143,10 @@ class WriteView : UIViewController,  UITableViewDelegate, UITableViewDataSource,
     
     override func viewDidDisappear(_ animated: Bool) {
         KLog.d(tag: TAG, msg: "viewDidDisappear");
-        if(mDataList != nil && mDataList.count > 0){
+        if(mDataList.count > 0){
             mDataList.removeAll()
         }
-        if(mBucketDataList != nil && mBucketDataList.count > 0){
+        if(mBucketDataList.count > 0){
             mBucketDataList.removeAll()
         }
     }

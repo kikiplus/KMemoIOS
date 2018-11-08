@@ -60,7 +60,7 @@ class RankListView : UIViewController , IHttpReceive , UITableViewDelegate, UITa
         var isValid : Bool  = false
         do {
             if let jsonString = try JSONSerialization.jsonObject(with: data, options: .allowFragments) as? [String: Any] {
-                if jsonString != nil {
+                if jsonString.count > 0 {
                     isValid = jsonString["isValid"] as! Bool
                     // print(jsonString)
                 }
@@ -149,7 +149,7 @@ class RankListView : UIViewController , IHttpReceive , UITableViewDelegate, UITa
      }
   
     private func getCommentCount( index : Int ) -> Bool {
-        if (mBucketDataList != nil) {
+        if (mBucketDataList.count > 0) {
             for bucket in mBucketDataList {
                 if (bucket.mIdx == index) {
                     let comment = bucket.mComment

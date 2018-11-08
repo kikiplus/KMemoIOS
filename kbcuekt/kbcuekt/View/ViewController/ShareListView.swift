@@ -66,7 +66,7 @@ class ShareListView: UIViewController , IHttpReceive, UITableViewDelegate, UITab
     }
     
     private func setBackgroundColor() {
-        if mBackColor != nil {
+        if mBackColor.count > 0 {
             let uColor = UIColor(hexRGB: mBackColor)
             view.backgroundColor = uColor
             backView.backgroundColor = uColor
@@ -140,7 +140,7 @@ class ShareListView: UIViewController , IHttpReceive, UITableViewDelegate, UITab
         var isValid : Bool  = false
         do {
             if let jsonString = try JSONSerialization.jsonObject(with: data, options: .allowFragments) as? [String: Any] {
-                if jsonString != nil {
+                if jsonString.count > 0 {
                     isValid = jsonString["isValid"] as! Bool
                     // print(jsonString)
                 }
@@ -231,7 +231,7 @@ class ShareListView: UIViewController , IHttpReceive, UITableViewDelegate, UITab
                 break
             case SHARE_BUCKET_LIST:
                 var data : String = String(obj)
-                if (data == nil) {
+                if (data.count == 0) {
                     data = ContextUtils.DEFULAT_SHARE_BUCKET_IDX
                 }
                 //  KProgressDialog.setDataLoadingDialog(this, true, this.getString(R.string.loading_string), true);

@@ -89,7 +89,7 @@ class ShareDetailView : UIViewController , IHttpReceive , UITableViewDelegate, U
         print(data)
         do {
             if let jsonString = try JSONSerialization.jsonObject(with: data, options: .allowFragments) as? [String: Any] {
-                if jsonString != nil {
+                if jsonString.count > 0 {
                     isValid = jsonString["isValid"] as! Bool
                     print(jsonString)
                 }

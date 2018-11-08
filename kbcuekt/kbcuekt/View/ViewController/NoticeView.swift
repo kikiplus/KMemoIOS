@@ -54,7 +54,7 @@ class NoticeView: UIViewController , IHttpReceive ,  UITableViewDelegate, UITabl
         var isValid : Bool  = false
         do {
             if let jsonString = try JSONSerialization.jsonObject(with: data, options: .allowFragments) as? [String: Any] {
-                if jsonString != nil {
+                if jsonString.count > 0 {
                     isValid = jsonString["isValid"] as! Bool
                     // print(jsonString)
                 }
