@@ -24,8 +24,6 @@ class SettingCustomCell : UITableViewCell {
     
     public func setOnEventListener(listenr : EventProtocol)
     {
-        if (listenr != nil){
-            mListenr = listenr
-        }
+        mListenr = listenr
     }
 }

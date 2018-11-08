@@ -79,15 +79,10 @@ class HttpUrlFileUploadManager {
             
              KLog.d(tag: "ttt", msg: "@@ url4 : "  )
             guard let httpResponse = response as? HTTPURLResponse, httpResponse.statusCode == 200 else{
-                if self.mIHttpReceive != nil {
-                    self.mIHttpReceive.onHttpReceive(type: ConstHTTP.HTTP_FAIL, actionId: self.mId, data: data! )
-                }
+                 self.mIHttpReceive.onHttpReceive(type: ConstHTTP.HTTP_FAIL, actionId: self.mId, data: data! )
                 return
             }
-            
-            if self.mIHttpReceive != nil {
-                self.mIHttpReceive.onHttpReceive(type: ConstHTTP.HTTP_OK, actionId: self.mId, data: data! )
-            }
+           self.mIHttpReceive.onHttpReceive(type: ConstHTTP.HTTP_OK, actionId: self.mId, data: data! )
         })
         task.resume()
     }

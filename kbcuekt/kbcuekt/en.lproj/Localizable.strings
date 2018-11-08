@@ -1,0 +1,157 @@
+/*
+ Localizable.strings
+ kbucket
+ 
+ Created by 김미혜 on 2018. 8. 23..
+ Copyright © 2018년 kikiplus. All rights reserved.
+ */
+
+"app_name" = "KMemo";
+
+"hello_world" = "hello My world";
+"action_settings" = "Settings";
+
+"share_title" = "Bucket, Things your dreams";
+"share_contents" = "KMemo Branch, Your Dream Bucket \nIntroducing KMemo Branch App. Market Address https://play.google.com/store/apps/details?id=momo.kikiplus.com.kbucket";
+
+"popup_title" = "popup";
+"popup_prepare_string" = "This service is coming soon";
+"share_popup_title" = "Share Buckets";
+"share_popup_content" = "Ready to share in the things of the world";
+"update_popup_title" = "Update Alram";
+"update_popup_content_y" = "There is a new version.\nYou must be updated in order to use this app.";
+"update_popup_content_n" = "There is a new version..\nYou can update the app if you enjoy the better things memo.";
+
+"back_string" = "Pressing the back button will exit once more.";
+"loading_string" = "Please wait a moment... ";
+
+"password_fail_string" = "Passwords do not match";
+"password_cancle_string" = "Release the password Set";
+
+"nickname_fail_string" = "Nickname must please enter";
+
+"check_input_bucket_string" = "You have already created content, or finished";
+"write_bucekt_success_string" = "it was shared with branch of the world \n I will support your dreams.";
+"write_bucekt_fail_string" = "Please try again failed to share.\n I would appreciate your inquiry in order to improve.";
+"upload_image_fail_string" = "Please try again failed to upload the image.\n I would appreciate your inquiry in order to improve.";
+"write_bucekt_image_attch" = "Please try again failed to attach Image.\n I would appreciate your inquiry in order to improve.";
+
+"server_fail_string" = "Please try again failed to load dataa.\n I would appreciate your inquiry in order to improve.";
+
+"version_fail_string" = "This service is coming soon";
+"version_update_string" = "I have the latest version, go to Market";
+"version_lastest_string" = "It uses the latest version";
+
+"db_backup_faile_string" = "Failed to backup the KMemo Bucket DB. \n I would appreciate your inquiry in order to improve.";
+"db_backup_path_string" = "KMemo Bucket DB backup path";
+"db_import_success_string" = "KMemo Bucket DB import Completed!";
+"db_import_fail_string" = "Failed to restore the KMemo Bucket DB.\n I would appreciate your inquiry in order to improve.";
+"db_delete_bucket" = "Deleted bucket list. \n Create a new bucket list.";
+
+"intro_title1" = "Dreams Bucket";
+"intro_title2" = "Bucket, Things your dreams";
+
+"main_menu1" = "Write\nBucket";
+"main_menu2" = "Achieved\nBucket";
+"main_menu3" = "Our\nBuckets";
+"main_menu4" = "Settings";
+"main_menu5" = "Bucket\nRanking";
+
+"wriete_bucket_date" = "Date";
+"wriete_bucket_content" = "Memo";
+"wriete_bucket_deadline" = "Time Limit";
+"wriete_bucket_completeYN" = "Go";
+
+"conf_update" = "Update";
+"conf_question" = "Contact Us";
+"conf_import" = "Import";
+"conf_export" = "Backup";
+"conf_db_reset" = "Reset";
+
+"conf_set_userSetting" = "Set NickName";
+"conf_set_userBackSetting" = "Set Background Color";
+"conf_set_password" = "Set password";
+"conf_cancle_password" = "Reset password";
+"conf_guide" = "Tutorial";
+"conf_back_color" = "After App exit, the selected color is applied to the background color";
+
+"ai_fail_string" = "This service is coming soon";
+"widget_write_bucket" = "Write Bucket";
+"widget_your_bucket" = "Bucket List";
+"widget_world_bucket" = "Ours Bucket";
+"widget_share_bucket" = "Share App";
+
+"navigation_drawer_open" = "Open navigation drawer";
+"navigation_drawer_close" = "Close navigation drawer";
+
+"bucket_list_title" = "My Achieved Buckets";
+"bucket_listline_modify" = "Mod";
+"bucket_listline_delete" = "Del";
+"comment_layout_enter" = "Enter";
+"conf_layout_lastest" = "Lastest version";
+"conf_layout_current" = "Current version";
+"notice_list_title" = "Notice list";
+"password_layout_title" = "Set password";
+
+"popup_layout_title" = "Popup";
+"popup_layout_close" = "Close";
+"img_popup_layout_title" = "Image Popup";
+"notice_popup_layout_title" = "Notice Popup";
+
+"bucketrank_list_title" = "Bucket Rank List";
+"bucketrank_list_contents1" = "Best";
+"bucketrank_list_contents2" = "Good";
+"bucketrank_list_contents3" = "Okay";
+"setbackgound_layout_title" = "Change Theme";
+"setnickname_layout_title" = "Set nickname";
+"setnickname_layout_contents" = "Please Your nickname.";
+
+"share_layout_title" = "Someones Bucket";
+"share_list_title" = "Our Bucket List";
+"share_line_show" = "Show";
+
+"write_list_title" = "Dream Bucket List";
+"write_list_sort_date" = "Sort Date";
+"write_list_sort_name" = "Sort Name";
+"write_list_sort_deadline" = "Sort Time Limit";
+"write_list_add" = "Add";
+"write_detail_save" = "Save";
+"write_detail_delete" = "Delete";
+"write_detail_share" = "Share";
+"write_detail_date" = "Date";
+"write_detail_gallery" = "Gallery";
+"write_detail_camera" = "Camera";
+
+"question_layout_type" = "Type";
+"question_layout_error" = "Error";
+"question_layout_impro" = "Improve";
+"question_layout_qest" = "Inquiry";
+"question_layout_contents" = "Contents";
+"question_layout_hint" = "If you write up in detail the content, staff helps to understand. Thank you. ";
+
+"check_version_lasted" = "Current Version is Lastest";
+"check_network" = "Please check your network connection";
+"delete_popup_title" = "Bucket Delete";
+"delete_popup_content" = "Would you like to delete your dream bucket?";
+"category_popup_title" = "Bucket Category";
+"category_popup_content" = "Please select a category your dream bucket.";
+
+"chat_layout_title" = "Todays Story";
+"chat_line_input" = "Enter";
+
+"interest_bucket_list_title" = "Bucket List 100";
+"interest_bucket_list_select" = "Selects";
+"interest_bucket_list_add" = "Add Interesting Bucket";
+"interest_bucket_list_view" = "Bucket List Contents";
+"share_add_popup_title" = "Add This";
+"share_add_popup_content" = "Shall I add it to My Bucket?";
+"share_add_popup_ok" = "This is Added as a bucket of Interest~";
+"share_delete_popup_ok" = "Delete My Interest Bucket~";
+
+"widget_memo_title" = "Your Mind";
+"widget_memo_modify" = "modify";
+"widget_memo_save" = "save";
+
+"dream100" = "Learning to swim,Baking lessons,Obtaining a license certificate,Learning the second foreign language,Learn how to play the piano,Learning Scuba diving,Learning Hair Beauty,Trip around the world,Tracking the Himalayas.,Go to the Great Wall of China,Traveling abroad from overseas.,Jeju Halla Mountain,View the Desert,Take a trip with my mom,Backpacking through Europe,To go to Ulleungdo Island,To go to Dokdo,Building my own house,Live with animals,Become a mentor to someone, Sharing Sharing,Lecture ,Send Your Parents Abroad Abroad,Make Happy family,Social organization creation ,Read 100 Books,Making foreign friends,Family photography,Running marathons,Bungee jump,A book writing,Furniture making,Paragliding,Traveling with your family,Try to live in another country,Organ donation,Driving license,Tree planting,Talent donation,Challenge triathlon challenge,Going camping on a camping trip,Send My Parents Cruise Tour,To visit kkossijang,Coupling,Language training,Love affair,Marriage ,Pictorial photography,Library making,Buy My Car,Buy Camera DSLR,Keeping pets,Mount Baekdu Mountain,Make a Damgeumju,Fish market,Learn photoshop,Water skiing learning,Try and participate in auction,Make a successful diet,To submit my article to the newspaper,Hot spring travel,Learning to dance,Winning the lottery.,Autobiographical writing,Homecoming,Volunteer work,Donate,Gardening,Become an audience,Make your own videos,Create photobook,Become an expert in one field,Buying a notebook,Buy Guitar,Learn to sew,Become a Power Blogger,Business,Painting,Try a skin scuba,Top of the Milky Way Desert,Goat pasture,Wearing a bikini,Making a regular bar,Learning Leather Crafts,Setting up my house,Create a dress room,Organize your waste baggage,Tattoo,Do not smoke,Change your hairstyle,Go to space,Confess my secrets,Developing Your Own Cuisine,Join the bazaar,Appear on TV,Blood donation,Serving murals,1 night stay at a wonderful hotel abroad,Serving Dogs,Bucket list Complete all items";
+
+"confList" = "Set Password,Reset Password,DB Manage,Set NickName,Set Background Color,Tutorial,Contact Us,Managers Blog,Share This,Bucket List 100";

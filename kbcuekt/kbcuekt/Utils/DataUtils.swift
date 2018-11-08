@@ -78,25 +78,11 @@ class DataUtils {
             print(error)
         }
         
-        do {
-            // 파일 이름을 기존의 경로에 추가
-            let dateTime = DateUtils.convertTime() + ".jpg";
-            let filePath = dataPath.appendingPathComponent(dateTime)
-            strPhotoPath = filePath.absoluteString
-            KLog.d(tag: ContextUtils.TAG, msg: "@@ file Path New : " + strPhotoPath)
-            // 쓸 내용
-//            let text = "Hello File From Swift"
-//
-//            do {
-//                // 쓰기 작업
-//                try text.write(to: helloPath, atomically: false, encoding: .utf8)
-//            }
-        }catch let error as NSError {
-            print("Error Writing File : \(error.localizedDescription)")
-        }
-        
-        
-    
+        // 파일 이름을 기존의 경로에 추가
+        let dateTime = DateUtils.convertTime() + ".jpg";
+        let filePath = dataPath.appendingPathComponent(dateTime)
+        strPhotoPath = filePath.absoluteString
+        KLog.d(tag: ContextUtils.TAG, msg: "@@ file Path New : " + strPhotoPath)
         return strPhotoPath
     }
    
@@ -125,7 +111,7 @@ class DataUtils {
     }
     
     public static func save(image: UIImage, fileName : String) -> String? {
-//        let fileURL = documentsUrl.appendingPathComponent(fileName)
+        let fileURL = documentsUrl.appendingPathComponent(fileName)
 //        if let imageData = UIImageJPEGRepresentation(image, 1.0) {
 //            try? imageData.write(to: fileURL, options: .atomic)
 //            return fileName // ----> Save fileName

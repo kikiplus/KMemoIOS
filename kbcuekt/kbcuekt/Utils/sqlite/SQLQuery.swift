@@ -31,10 +31,10 @@ class SQLQuery{
 
     public func selectKbucket() -> Results<Bucket>? {
         do{
-            let realm = try! Realm()
+            let realm = try Realm()
             let bucketList = realm.objects(Bucket.self)
             return bucketList
-        }catch let error as NSError{
+        }catch _{
             KLog.d(tag: TAG, msg: "selectKbucet db error")
             return nil
         }
@@ -42,10 +42,10 @@ class SQLQuery{
 
     public func selectKbucket(memoContents : String ) -> Results<Bucket>? {
         do{
-            let realm = try! Realm()
+            let realm = try Realm()
             let bucketList = realm.objects(Bucket.self).filter("mContent = '" + memoContents + "'")
             return bucketList
-        }catch let error as NSError{
+        }catch _{
             KLog.d(tag: TAG, msg: "selectKbucet db error")
             return nil
         }
@@ -53,12 +53,12 @@ class SQLQuery{
 
     public func containsKbucket(memoContents : String ) -> Bool {
         do{
-            let realm = try! Realm()
+            let realm = try Realm()
             let bucketList = realm.objects(Bucket.self).filter("mContent = '" + memoContents + "'")
             if(bucketList.count > 0){
                 return true
             }
-        }catch let error as NSError{
+        }catch _{
             KLog.d(tag: TAG, msg: "selectKbucet db error")
         }
         return false
@@ -134,7 +134,6 @@ class SQLQuery{
         let realm = try! Realm()
        
         let bucketObj = realm.objects(Bucket.self).filter("mContent = '" + cotents + "'")
-        let strCount = String(describing: bucketObj.count)
         try! realm.write {
             let cnt = bucketObj.count
             if cnt == 1 {

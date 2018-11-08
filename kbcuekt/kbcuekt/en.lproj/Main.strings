@@ -1,0 +1,162 @@
+
+/* Class = "UIButton"; normalTitle = "내가 이룬 꿈가지"; ObjectID = "0EH-5x-yRi"; */
+"0EH-5x-yRi.normalTitle" = "내가 이룬 꿈가지";
+
+/* Class = "UIButton"; normalTitle = "WORK"; ObjectID = "0b7-X2-1NC"; */
+"0b7-X2-1NC.normalTitle" = "WORK";
+
+/* Class = "UILabel"; text = "내용"; ObjectID = "0jo-l6-yDV"; */
+"0jo-l6-yDV.text" = "내용";
+
+/* Class = "UILabel"; text = "당신의 별명을 입력해주세요."; ObjectID = "5aV-b7-faX"; */
+"5aV-b7-faX.text" = "당신의 별명을 입력해주세요.";
+
+/* Class = "UIButton"; normalTitle = "제목순 정렬"; ObjectID = "5dW-JZ-A14"; */
+"5dW-JZ-A14.normalTitle" = "제목순 정렬";
+
+/* Class = "UILabel"; text = "기한"; ObjectID = "6Qt-Qt-5eZ"; */
+"6Qt-Qt-5eZ.text" = "기한";
+
+/* Class = "UILabel"; text = "꿈 가지 내용"; ObjectID = "7mt-bp-CWN"; */
+"7mt-bp-CWN.text" = "꿈 가지 내용";
+
+/* Class = "UIButton"; normalTitle = "최신순 정렬"; ObjectID = "8Hn-ug-dcV"; */
+"8Hn-ug-dcV.normalTitle" = "최신순 정렬";
+
+/* Class = "UILabel"; text = "내가 이룬 꿈 가지"; ObjectID = "9AO-ck-XDE"; */
+"9AO-ck-XDE.text" = "내가 이룬 꿈 가지";
+
+/* Class = "UIButton"; normalTitle = "FINANCE"; ObjectID = "AqQ-fZ-qdK"; */
+"AqQ-fZ-qdK.normalTitle" = "FINANCE";
+
+/* Class = "UIButton"; normalTitle = "버킷 랭킹"; ObjectID = "Ar1-iJ-2Se"; */
+"Ar1-iJ-2Se.normalTitle" = "버킷 랭킹";
+
+/* Class = "UIButton"; normalTitle = "EDUCATION"; ObjectID = "BFi-uZ-Ych"; */
+"BFi-uZ-Ych.normalTitle" = "EDUCATION";
+
+/* Class = "UIButton"; normalTitle = "꿈 가지 작성"; ObjectID = "BPr-fP-Vf2"; */
+"BPr-fP-Vf2.normalTitle" = "꿈 가지 작성";
+
+/* Class = "UIViewController"; title = "Main"; ObjectID = "BYZ-38-t0r"; */
+"BYZ-38-t0r.title" = "Main";
+
+/* Class = "UILabel"; text = "날짜"; ObjectID = "BnJ-k0-xjd"; */
+"BnJ-k0-xjd.text" = "날짜";
+
+/* Class = "UIButton"; normalTitle = "FAMILY"; ObjectID = "CJi-8t-o1o"; */
+"CJi-8t-o1o.normalTitle" = "FAMILY";
+
+/* Class = "UIButton"; normalTitle = "보기"; ObjectID = "Dx2-0t-TbQ"; */
+"Dx2-0t-TbQ.normalTitle" = "보기";
+
+/* Class = "UIButton"; normalTitle = "Back"; ObjectID = "FNm-g2-fS7"; */
+"FNm-g2-fS7.normalTitle" = "Back";
+
+/* Class = "UILabel"; text = "Comments"; ObjectID = "FXj-RC-ZVZ"; */
+"FXj-RC-ZVZ.text" = "Comments";
+
+/* Class = "UIButton"; normalTitle = "확인"; ObjectID = "G19-1o-3dO"; */
+"G19-1o-3dO.normalTitle" = "확인";
+
+/* Class = "UIButton"; normalTitle = "기한순 정렬"; ObjectID = "GU0-07-u6W"; */
+"GU0-07-u6W.normalTitle" = "기한순 정렬";
+
+/* Class = "UIButton"; normalTitle = "수정"; ObjectID = "Ggj-Yd-Yyb"; */
+"Ggj-Yd-Yyb.normalTitle" = "수정";
+
+/* Class = "UILabel"; text = "완료"; ObjectID = "Isl-qv-RZ0"; */
+"Isl-qv-RZ0.text" = "완료";
+
+/* Class = "UIButton"; normalTitle = "드림이"; ObjectID = "LMG-4I-Bsj"; */
+"LMG-4I-Bsj.normalTitle" = "드림이";
+
+/* Class = "UILabel"; text = "별명 설정"; ObjectID = "Lvu-R0-VeQ"; */
+"Lvu-R0-VeQ.text" = "별명 설정";
+
+/* Class = "UIButton"; normalTitle = "LIFE"; ObjectID = "RtG-Qq-i67"; */
+"RtG-Qq-i67.normalTitle" = "LIFE";
+
+/* Class = "UIButton"; normalTitle = "카메라"; ObjectID = "Tse-0H-7zu"; */
+"Tse-0H-7zu.normalTitle" = "카메라";
+
+/* Class = "UIButton"; normalTitle = "Send"; ObjectID = "UtB-37-a4B"; */
+"UtB-37-a4B.normalTitle" = "Send";
+
+/* Class = "UIButton"; normalTitle = "광고"; ObjectID = "W2h-b1-O73"; */
+"W2h-b1-O73.normalTitle" = "광고";
+
+/* Class = "UIButton"; normalTitle = "Back"; ObjectID = "YQB-Ja-Tcc"; */
+"YQB-Ja-Tcc.normalTitle" = "Back";
+
+/* Class = "UITextView"; text = "Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda."; ObjectID = "Yef-NJ-g2P"; */
+"Yef-NJ-g2P.text" = "Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.";
+
+/* Class = "UIButton"; normalTitle = "갤러리"; ObjectID = "Zot-Pu-YY5"; */
+"Zot-Pu-YY5.normalTitle" = "갤러리";
+
+/* Class = "UIButton"; normalTitle = "HEALTH"; ObjectID = "ccx-ui-X8a"; */
+"ccx-ui-X8a.normalTitle" = "HEALTH";
+
+/* Class = "UILabel"; text = "누군가의 가지 이야기"; ObjectID = "d9I-M7-0ln"; */
+"d9I-M7-0ln.text" = "누군가의 가지 이야기";
+
+/* Class = "UIButton"; normalTitle = "설정"; ObjectID = "dNx-of-dsH"; */
+"dNx-of-dsH.normalTitle" = "설정";
+
+/* Class = "UIButton"; normalTitle = "추가"; ObjectID = "flU-DZ-Cuf"; */
+"flU-DZ-Cuf.normalTitle" = "추가";
+
+/* Class = "UIButton"; normalTitle = "Back"; ObjectID = "g2f-nH-W1S"; */
+"g2f-nH-W1S.normalTitle" = "Back";
+
+/* Class = "UIButton"; normalTitle = "삭제"; ObjectID = "g93-ua-wUj"; */
+"g93-ua-wUj.normalTitle" = "삭제";
+
+/* Class = "UIButton"; normalTitle = "이름"; ObjectID = "hFb-Hl-4RR"; */
+"hFb-Hl-4RR.normalTitle" = "이름";
+
+/* Class = "UIButton"; normalTitle = "삭제"; ObjectID = "iEM-hy-r0Y"; */
+"iEM-hy-r0Y.normalTitle" = "삭제";
+
+/* Class = "UIButton"; normalTitle = "Back"; ObjectID = "krl-ug-9i6"; */
+"krl-ug-9i6.normalTitle" = "Back";
+
+/* Class = "UIButton"; normalTitle = "LOVE"; ObjectID = "lga-Le-pp9"; */
+"lga-Le-pp9.normalTitle" = "LOVE";
+
+/* Class = "UIButton"; normalTitle = "Back"; ObjectID = "lx9-fc-st2"; */
+"lx9-fc-st2.normalTitle" = "Back";
+
+/* Class = "UILabel"; text = "모두의 가지 목록"; ObjectID = "maj-Qu-Rve"; */
+"maj-Qu-Rve.text" = "모두의 가지 목록";
+
+/* Class = "UIButton"; normalTitle = "ETC"; ObjectID = "oEe-Sm-WqQ"; */
+"oEe-Sm-WqQ.normalTitle" = "ETC";
+
+/* Class = "UIButton"; normalTitle = "DEVELOP"; ObjectID = "qCu-2b-BpQ"; */
+"qCu-2b-BpQ.normalTitle" = "DEVELOP";
+
+/* Class = "UIButton"; normalTitle = "2017-00-00"; ObjectID = "r30-wE-3pn"; */
+"r30-wE-3pn.normalTitle" = "2017-00-00";
+
+/* Class = "UIButton"; normalTitle = "저장"; ObjectID = "raL-fM-XlY"; */
+"raL-fM-XlY.normalTitle" = "저장";
+
+/* Class = "UIButton"; normalTitle = "0000-00-00"; ObjectID = "t0c-fl-sbr"; */
+"t0c-fl-sbr.normalTitle" = "0000-00-00";
+
+/* Class = "UIButton"; normalTitle = "모두의 가지들"; ObjectID = "tAJ-ad-w4C"; */
+"tAJ-ad-w4C.normalTitle" = "모두의 가지들";
+
+/* Class = "UILabel"; text = "꿈 가지 목록"; ObjectID = "tWF-Ci-jaC"; */
+"tWF-Ci-jaC.text" = "꿈 가지 목록";
+
+/* Class = "UIButton"; normalTitle = "공지"; ObjectID = "vWT-DQ-OiC"; */
+"vWT-DQ-OiC.normalTitle" = "공지";
+
+/* Class = "UIButton"; normalTitle = "Back"; ObjectID = "vjT-z5-bh5"; */
+"vjT-z5-bh5.normalTitle" = "Back";
+
+/* Class = "UIButton"; normalTitle = "공유"; ObjectID = "yJY-RF-p6w"; */
+"yJY-RF-p6w.normalTitle" = "공유";

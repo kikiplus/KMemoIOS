@@ -82,8 +82,13 @@
 		0003F0B4217C3AF100C3BDD8 /* UpdateApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0003F0A5217C3AF100C3BDD8 /* UpdateApp.swift */; };
 		0003F0B5217C3AF100C3BDD8 /* FirstCustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0003F0A6217C3AF100C3BDD8 /* FirstCustomCell.swift */; };
 		0003F0B7217C3B6500C3BDD8 /* NoticeCustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0003F0B6217C3B6500C3BDD8 /* NoticeCustomCell.swift */; };
-		00A7E8F0219455C900E56D12 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00A7E8EE219455C900E56D12 /* Realm.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
-		00A7E8F1219455C900E56D12 /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00A7E8EF219455C900E56D12 /* RealmSwift.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		00A7E8F221945A3F00E56D12 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00A7E8EE219455C900E56D12 /* Realm.framework */; };
+		00A7E8F321945A3F00E56D12 /* Realm.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 00A7E8EE219455C900E56D12 /* Realm.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		00A7E8F421945A4200E56D12 /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00A7E8EF219455C900E56D12 /* RealmSwift.framework */; };
+		00A7E8F521945A4200E56D12 /* RealmSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 00A7E8EF219455C900E56D12 /* RealmSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		00A7E8F721945B8D00E56D12 /* ConstPopup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A7E8F621945B8D00E56D12 /* ConstPopup.swift */; };
+		00A7E8FB21945BA000E56D12 /* UserUpdateTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A7E8F921945BA000E56D12 /* UserUpdateTask.swift */; };
+		00A7E8FC21945BA000E56D12 /* AppUpdateTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A7E8FA21945BA000E56D12 /* AppUpdateTask.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -110,6 +115,8 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				00A7E8F521945A4200E56D12 /* RealmSwift.framework in Embed Frameworks */,
+				00A7E8F321945A3F00E56D12 /* Realm.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -200,6 +207,9 @@
 		0003F0B6217C3B6500C3BDD8 /* NoticeCustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoticeCustomCell.swift; sourceTree = "<group>"; };
 		00A7E8EE219455C900E56D12 /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Realm.framework; path = Frameworks/Realm.framework; sourceTree = "<group>"; };
 		00A7E8EF219455C900E56D12 /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RealmSwift.framework; path = Frameworks/RealmSwift.framework; sourceTree = "<group>"; };
+		00A7E8F621945B8D00E56D12 /* ConstPopup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstPopup.swift; sourceTree = "<group>"; };
+		00A7E8F921945BA000E56D12 /* UserUpdateTask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserUpdateTask.swift; sourceTree = "<group>"; };
+		00A7E8FA21945BA000E56D12 /* AppUpdateTask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppUpdateTask.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -207,8 +217,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				00A7E8F0219455C900E56D12 /* Realm.framework in Frameworks */,
-				00A7E8F1219455C900E56D12 /* RealmSwift.framework in Frameworks */,
+				00A7E8F421945A4200E56D12 /* RealmSwift.framework in Frameworks */,
+				00A7E8F221945A3F00E56D12 /* Realm.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -332,6 +342,7 @@
 		0003EF7B217C378F00C3BDD8 /* Const */ = {
 			isa = PBXGroup;
 			children = (
+				00A7E8F621945B8D00E56D12 /* ConstPopup.swift */,
 				0003EF7C217C378F00C3BDD8 /* ConstHTTP.swift */,
 			);
 			path = Const;
@@ -368,6 +379,7 @@
 		0003EF94217C378F00C3BDD8 /* Managers */ = {
 			isa = PBXGroup;
 			children = (
+				00A7E8F821945BA000E56D12 /* task */,
 				0003EF9C217C378F00C3BDD8 /* http */,
 				0003EFA9217C378F00C3BDD8 /* realm */,
 			);
@@ -445,6 +457,15 @@
 				00A7E8EF219455C900E56D12 /* RealmSwift.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		00A7E8F821945BA000E56D12 /* task */ = {
+			isa = PBXGroup;
+			children = (
+				00A7E8F921945BA000E56D12 /* UserUpdateTask.swift */,
+				00A7E8FA21945BA000E56D12 /* AppUpdateTask.swift */,
+			);
+			path = task;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -632,6 +653,7 @@
 				0003F040217C388B00C3BDD8 /* ChatView.swift in Sources */,
 				0003F036217C388B00C3BDD8 /* WriteDetailView.swift in Sources */,
 				0003F056217C38B200C3BDD8 /* AppUtils.swift in Sources */,
+				00A7E8FC21945BA000E56D12 /* AppUpdateTask.swift in Sources */,
 				0003F0A8217C3AF100C3BDD8 /* BucketCustomCell.swift in Sources */,
 				0003F04C217C38A600C3BDD8 /* StringUtils.swift in Sources */,
 				0003F038217C388B00C3BDD8 /* PushPopupView.swift in Sources */,
@@ -645,6 +667,7 @@
 				0003F021217C386800C3BDD8 /* AppDelegate.swift in Sources */,
 				0003F075217C3A0200C3BDD8 /* CustomPopup.swift in Sources */,
 				0003F051217C38AE00C3BDD8 /* SQLQuery.swift in Sources */,
+				00A7E8F721945B8D00E56D12 /* ConstPopup.swift in Sources */,
 				0003F041217C388B00C3BDD8 /* IntroView.swift in Sources */,
 				0003F052217C38B200C3BDD8 /* ErrorLogUtils.swift in Sources */,
 				0003F04F217C38AE00C3BDD8 /* SQLiteAdapter.swift in Sources */,
@@ -655,6 +678,7 @@
 				0003F050217C38AE00C3BDD8 /* SQLiteAdapter.java in Sources */,
 				0003F059217C38B200C3BDD8 /* LinkedList.swift in Sources */,
 				0003F04D217C38A600C3BDD8 /* DateUtils.swift in Sources */,
+				00A7E8FB21945BA000E56D12 /* UserUpdateTask.swift in Sources */,
 				0003F0B7217C3B6500C3BDD8 /* NoticeCustomCell.swift in Sources */,
 				0003F031217C388B00C3BDD8 /* ShareDetailView.swift in Sources */,
 				0003F077217C3A0200C3BDD8 /* BasicPopup.swift in Sources */,

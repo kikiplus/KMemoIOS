@@ -34,7 +34,7 @@ class CustomPopup {
         mContent = message
         setData()
         if(self.mPopupLiener != nil){
-//            self.mPopupLiener?.onPopupAction(popId : id, what : ConfirmPopup.POPUP_BTN_OK, data : "")
+            self.mPopupLiener?.onPopupAction(popId : id, what : ConstPopup.POPUP_BTN_OK, data : "")
         }
     
     }
