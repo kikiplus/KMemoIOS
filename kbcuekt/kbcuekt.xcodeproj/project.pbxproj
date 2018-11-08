@@ -89,6 +89,7 @@
 		00A7E8F721945B8D00E56D12 /* ConstPopup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A7E8F621945B8D00E56D12 /* ConstPopup.swift */; };
 		00A7E8FB21945BA000E56D12 /* UserUpdateTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A7E8F921945BA000E56D12 /* UserUpdateTask.swift */; };
 		00A7E8FC21945BA000E56D12 /* AppUpdateTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A7E8FA21945BA000E56D12 /* AppUpdateTask.swift */; };
+		00A7E8FE21945E5B00E56D12 /* DBMgrView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A7E8FD21945E5B00E56D12 /* DBMgrView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -210,6 +211,7 @@
 		00A7E8F621945B8D00E56D12 /* ConstPopup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstPopup.swift; sourceTree = "<group>"; };
 		00A7E8F921945BA000E56D12 /* UserUpdateTask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserUpdateTask.swift; sourceTree = "<group>"; };
 		00A7E8FA21945BA000E56D12 /* AppUpdateTask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppUpdateTask.swift; sourceTree = "<group>"; };
+		00A7E8FD21945E5B00E56D12 /* DBMgrView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DBMgrView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -362,6 +364,7 @@
 				0003EF86217C378F00C3BDD8 /* RankListView.swift */,
 				0003EF87217C378F00C3BDD8 /* SetNickNameView.swift */,
 				0003EF88217C378F00C3BDD8 /* ShareListView.swift */,
+				00A7E8FD21945E5B00E56D12 /* DBMgrView.swift */,
 				0003EF89217C378F00C3BDD8 /* PassWordView.swift */,
 				0003EF8A217C378F00C3BDD8 /* ConfigurationView.swift */,
 				0003EF8B217C378F00C3BDD8 /* MainView.swift */,
@@ -698,6 +701,7 @@
 				0003F05B217C38BE00C3BDD8 /* HttpUrlTaskManager.swift in Sources */,
 				0003F0AC217C3AF100C3BDD8 /* Chat.swift in Sources */,
 				0003F035217C388B00C3BDD8 /* AddBucketView.swift in Sources */,
+				00A7E8FE21945E5B00E56D12 /* DBMgrView.swift in Sources */,
 				0003F020217C385200C3BDD8 /* ViewController.swift in Sources */,
 				0003F042217C388B00C3BDD8 /* TutorialView.swift in Sources */,
 				0003F054217C38B200C3BDD8 /* ViewUtils.swift in Sources */,
