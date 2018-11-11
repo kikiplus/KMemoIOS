@@ -421,6 +421,7 @@
                                 <sections/>
                             </tableView>
                         </subviews>
+                        <color key="backgroundColor" red="1" green="0.79215686269999996" blue="0.42352941179999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
                     <connections>
                         <outlet property="mTableView" destination="2nn-9F-nOL" id="qMW-RD-yX3"/>
@@ -654,7 +655,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="0.89260018129999996" blue="0.3228536232" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="NoticeCustomCell" rowHeight="207" id="alB-Ka-fWj" customClass="NoticeCustomCell" customModule="kbcuekt" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="NoticeCustomCell" rowHeight="207" id="alB-Ka-fWj" customClass="NoticeCustomCell" customModule="kbucket">
                                         <rect key="frame" x="0.0" y="28" width="375" height="207"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="alB-Ka-fWj" id="QcE-Xz-9Wd">
@@ -685,7 +686,7 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="imgHeightConstraint" destination="349-YB-Inj" id="3kE-pe-1u6"/>
+                                            <outlet property="imgHeightConstraint" destination="349-YB-Inj" id="TzY-VB-hOf"/>
                                             <outlet property="lbContents" destination="G4Z-pm-Cgn" id="4zy-0O-obp"/>
                                             <outlet property="lbNotice" destination="gLO-0h-ffE" id="aha-Dd-1NH"/>
                                         </connections>
