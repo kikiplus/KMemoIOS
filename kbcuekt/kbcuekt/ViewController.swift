@@ -52,15 +52,13 @@ class ViewController: UIViewController , IHttpReceive , PopupProtocol {
 //        bannerView.rootViewController = self
 //        bannerView.load(GADRequest())
 //
-         let isConnect : Bool = NetworkUtils.isConnectivityStatus()
+        let isConnect : Bool = NetworkUtils.isConnectivityStatus()
                         if (isConnect == true) {
-            handleMessage(what: UPDATE_USER, obj: "")
             handleMessage(what: CHECK_VERSION, obj: "")
         }
         AppUtils.sendTrackerScreen(screen: "메인화면")
     }
 
-    
     private func setBackgroundColor() {
         let color : String = UserDefault.read(key: ContextUtils.BACK_MEMO)
         KLog.d(tag: TAG, msg: "color : " + color)
@@ -80,6 +78,17 @@ class ViewController: UIViewController , IHttpReceive , PopupProtocol {
     
     override func viewDidAppear(_ animated: Bool) {
         KLog.d(tag: "ViewController", msg: "viewDidAppear");
+        let nickname = UserDefault.read(key:ContextUtils.KEY_USER_NICKNAME)
+        KLog.d(tag: TAG, msg: "nickname : " + nickname)
+        if(nickname.count == 0 ){
+            let  uv  =  self.storyboard?.instantiateViewController(withIdentifier: ContextUtils.SET_NICKNAME_VIEW)
+            UIApplication.shared.delegate?.window!!.rootViewController?.present(uv!, animated: true, completion: nil)
+        }else{
+            let isConnect : Bool = NetworkUtils.isConnectivityStatus()
+            if (isConnect == true) {
+                handleMessage(what: UPDATE_USER, obj: "")
+            }
+        }
     }
     
     override func viewWillDisappear(_ animated: Bool) {

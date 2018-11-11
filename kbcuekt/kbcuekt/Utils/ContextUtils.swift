@@ -111,6 +111,7 @@ class ContextUtils{
     public static let SHARE_VIEW : String = "ShareListView"
     public static let WRITE_VIEW : String = "WriteView"
     public static let BUCKET_LIST_VIEW : String = "BucketListView"
+    public static let SET_NICKNAME_VIEW : String = "SetNickNameView"
 
     /**************************************************************************
      *
