@@ -62,7 +62,7 @@ class CustomPopup {
         appDelegate.window!.addSubview(self.centerView)
         
         self.exitButton = UIButton(frame: CGRect(x: 0, y: 0, width : 100, height : 50))
-        self.exitButton.setTitle("exit", for: .normal)
+        self.exitButton.setTitle("close", for: .normal)
         self.exitButton.backgroundColor = UIColor.gray
         self.exitButton.addTarget(self, action: #selector(click(_:)), for: .touchUpInside)
         

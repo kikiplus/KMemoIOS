@@ -59,7 +59,7 @@ class ShareListView: UIViewController , IHttpReceive, UITableViewDelegate, UITab
         mButtonList.append(btCategory6)
         mButtonList.append(btCategory7)
         mButtonList.append(btCategory8)
-        handleMessage(what: SHARE_BUCKET_LIST, obj : "1")
+        handleMessage(what: CHECK_NETWORK, obj: "")
         btCategory0.setTitleColor(uColor, for: .normal)
         btCategory0.backgroundColor = UIColor.white
         setBackgroundColor()
@@ -124,7 +124,14 @@ class ShareListView: UIViewController , IHttpReceive, UITableViewDelegate, UITab
         button.setTitleColor(uColor, for: .normal)
         button.backgroundColor = UIColor.white
         
-        handleMessage(what: SHARE_BUCKET_LIST, obj : categoryCode)
+        let isConnect : Bool = NetworkUtils.isConnectivityStatus()
+        if (isConnect == true) {
+            handleMessage(what: SHARE_BUCKET_LIST, obj : categoryCode)
+        }else{
+            let connectMsg = AppUtils.localizedString(forKey :"check_network")
+            handleMessage(what: TOAST_MASSEGE, obj: connectMsg)
+        }
+       
     }
     
     func setAllButtonReset(){
@@ -238,7 +245,8 @@ class ShareListView: UIViewController , IHttpReceive, UITableViewDelegate, UITab
                 let url  = ContextUtils.KBUCKET_BUCKET_LIST_URL
                 let  httpUrlTaskManager : HttpUrlTaskManager =  HttpUrlTaskManager(url : url, post : true, receive : self, id : ConstHTTP.BUCKET_LIST)
                 data = "idx=" + data
-                httpUrlTaskManager.actionTaskWithData(data: data)
+               
+ httpUrlTaskManager.actionTaskWithData(data: data)
                 break
             case SET_BUCKETLIST:
                 DispatchQueue.main.async {
@@ -246,12 +254,12 @@ class ShareListView: UIViewController , IHttpReceive, UITableViewDelegate, UITab
                 }
                 break
             case CHECK_NETWORK:
-                let isConnect  : Bool = true //NetworkUtils.isConnectivityStatus(this)
-                if (isConnect == false) {
+                let isConnect  : Bool = NetworkUtils.isConnectivityStatus()
+                if (isConnect == false)  {
                     let connectMsg = AppUtils.localizedString(forKey :"check_network")
                     handleMessage(what: TOAST_MASSEGE, obj: connectMsg)
-                } else {
-                    handleMessage(what: CATEGORY_LIST, obj: "")
+                }else{
+                    handleMessage(what: SHARE_BUCKET_LIST, obj: "1")
                 }
                 break
             default:

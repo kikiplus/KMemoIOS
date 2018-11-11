@@ -112,10 +112,10 @@ class DataUtils {
     
     public static func save(image: UIImage, fileName : String) -> String? {
         let fileURL = documentsUrl.appendingPathComponent(fileName)
-//        if let imageData = UIImageJPEGRepresentation(image, 1.0) {
-//            try? imageData.write(to: fileURL, options: .atomic)
-//            return fileName // ----> Save fileName
-//        }
+        if let imageData = image.jpegData(compressionQuality: 1.0) {
+            try? imageData.write(to: fileURL, options: .atomic)
+            return fileName // ----> Save fileName
+        }
         print("Error saving image")
         return nil
     }

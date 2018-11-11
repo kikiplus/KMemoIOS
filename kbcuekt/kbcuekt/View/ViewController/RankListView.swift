@@ -17,6 +17,7 @@ class RankListView : UIViewController , IHttpReceive , UITableViewDelegate, UITa
     private let LOAD_BUCKET_RANK : Int      = 30
     private let SET_LIST : Int              = 40
     private let SEND_BUCKET_RANK : Int      = 50
+    private let CHECK_NETWORK : Int             = 70
  
     private var mBucketDataList = Array<BucketRank>()
     private var mBucketRankComment : Int = -1
@@ -35,7 +36,8 @@ class RankListView : UIViewController , IHttpReceive , UITableViewDelegate, UITa
         mTableView.delegate = self
         mTableView.dataSource = self
         AppUtils.sendTrackerScreen(screen : "버킷랭킹화면")
-        handleMessage(what: LOAD_BUCKET_RANK, obj: "")
+        handleMessage(what: CHECK_NETWORK, obj: "")
+        setBackgroundColor()
     }
     
     private func setBackgroundColor() {
@@ -142,6 +144,15 @@ class RankListView : UIViewController , IHttpReceive , UITableViewDelegate, UITa
                 let  httpUrlTaskManager : HttpUrlTaskManager =  HttpUrlTaskManager(url : url, post : true, receive : self, id : ConstHTTP.RANK_UPDATE_COMMENT)
                 let sendData = "idx=" + String(mBucketRankIdx) + "&comment=" + String(mBucketRankComment) + "&nickname=" + userNickName2
                 httpUrlTaskManager.actionTaskWithData(data: sendData)
+                break
+            case CHECK_NETWORK:
+                let isConnect  : Bool = NetworkUtils.isConnectivityStatus()
+                if (isConnect == false)  {
+                    let connectMsg = AppUtils.localizedString(forKey :"check_network")
+                    handleMessage(what: TOAST_MASSEGE, obj: connectMsg)
+                }else{
+                  handleMessage(what: LOAD_BUCKET_RANK, obj: "")
+                }
                 break
           default:
                 break

@@ -471,16 +471,24 @@ UIPopoverControllerDelegate,UINavigationControllerDelegate {
 //    }
     
     func openGallary(){
-        picker!.allowsEditing = false
-        picker!.sourceType = UIImagePickerController.SourceType.photoLibrary
-        present(picker!, animated: true, completion: nil)
+        if(UIImagePickerController.isSourceTypeAvailable(UIImagePickerController.SourceType.photoLibrary)){
+            picker!.allowsEditing = false
+            picker!.sourceType = UIImagePickerController.SourceType.photoLibrary
+            present(picker!, animated: true, completion: nil)
+        }else{
+            let alert = UIAlertController(title: "Camera Not Found", message: "This device has no Camera", preferredStyle: .alert)
+            let ok = UIAlertAction(title: "OK", style:.default, handler: nil)
+            alert.addAction(ok)
+            present(alert, animated: true, completion: nil)
+        }
+       
     }
     
     func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
         dismiss(animated: true, completion: nil)
     }
     
-    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
+   @objc func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
         KLog.d(tag: TAG, msg: "imagePickerController" )
         let chosenImage = info["UIImagePickerControllerOriginalImage"] as! UIImage
         hideImageAttachButton(ishide: true)

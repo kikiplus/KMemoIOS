@@ -52,8 +52,11 @@ class ViewController: UIViewController , IHttpReceive , PopupProtocol {
 //        bannerView.rootViewController = self
 //        bannerView.load(GADRequest())
 //
-        handleMessage(what: UPDATE_USER, obj: "")
-        handleMessage(what: CHECK_VERSION, obj: "")
+         let isConnect : Bool = NetworkUtils.isConnectivityStatus()
+                        if (isConnect == true) {
+            handleMessage(what: UPDATE_USER, obj: "")
+            handleMessage(what: CHECK_VERSION, obj: "")
+        }
         AppUtils.sendTrackerScreen(screen: "메인화면")
     }
 
@@ -147,11 +150,17 @@ class ViewController: UIViewController , IHttpReceive , PopupProtocol {
                 userUpdateTask.actionTaskWithData(data : sendData )
                 break
             case REQUEST_AI:
-                let userNickName : String = UserDefault.read(key: ContextUtils.KEY_USER_NICKNAME)
-                let url  = ContextUtils.KBUCKET_AI
-                let  httpUrlTaskManager : HttpUrlTaskManager =  HttpUrlTaskManager(url : url, post : true, receive : self, id : ConstHTTP.REQUEST_AI)
-                let data : String = "nickname=" + userNickName
-                httpUrlTaskManager.actionTaskWithData(data: data)
+                 let isConnect : Bool = NetworkUtils.isConnectivityStatus()
+                if (isConnect == true) {
+                    let userNickName : String = UserDefault.read(key: ContextUtils.KEY_USER_NICKNAME)
+                    let url  = ContextUtils.KBUCKET_AI
+                    let  httpUrlTaskManager : HttpUrlTaskManager =  HttpUrlTaskManager(url : url, post : true, receive : self, id : ConstHTTP.REQUEST_AI)
+                    let data : String = "nickname=" + userNickName
+                    httpUrlTaskManager.actionTaskWithData(data: data)
+                }else{
+                    let connectMsg = AppUtils.localizedString(forKey :"check_network")
+                    handleMessage(what: TOAST_MASSEGE, obj: connectMsg)
+                }
                 break
             case FAIL_AI:
 //    //             KProgressDialog.setDataLoadingDialog(this, false, null, false);

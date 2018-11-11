@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--Main-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController storyboardIdentifier="ViewController" title="Main" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="ViewController" customModule="kbucket" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ViewController" title="Main" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="ViewController" customModule="kbcuekt" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="AOD-TB-I22"/>
                         <viewControllerLayoutGuide type="bottom" id="n7G-lh-QWN"/>
@@ -136,7 +136,7 @@
         <!--Set Nick Name View-->
         <scene sceneID="FUP-HE-g5V">
             <objects>
-                <viewController storyboardIdentifier="SetNickNameView" useStoryboardIdentifierAsRestorationIdentifier="YES" id="kwb-fr-ItG" customClass="SetNickNameView" customModule="kbucket" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SetNickNameView" useStoryboardIdentifierAsRestorationIdentifier="YES" id="kwb-fr-ItG" customClass="SetNickNameView" customModule="kbcuekt" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="8H9-cd-M5X"/>
                         <viewControllerLayoutGuide type="bottom" id="kHb-KZ-VBq"/>
@@ -205,7 +205,7 @@
         <!--Tutorial View-->
         <scene sceneID="2Ph-0F-QiV">
             <objects>
-                <viewController storyboardIdentifier="TutorialView" useStoryboardIdentifierAsRestorationIdentifier="YES" id="e0h-x1-8Ns" customClass="TutorialView" customModule="kbucket" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="TutorialView" useStoryboardIdentifierAsRestorationIdentifier="YES" id="e0h-x1-8Ns" customClass="TutorialView" customModule="kbcuekt" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="0jj-qC-16l"/>
                         <viewControllerLayoutGuide type="bottom" id="TZD-71-y7Q"/>
@@ -305,7 +305,7 @@
         <!--Rank List View-->
         <scene sceneID="5Ac-QF-pA1">
             <objects>
-                <viewController storyboardIdentifier="RankListView" useStoryboardIdentifierAsRestorationIdentifier="YES" id="LfF-u1-06c" customClass="RankListView" customModule="kbucket" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="RankListView" useStoryboardIdentifierAsRestorationIdentifier="YES" id="LfF-u1-06c" customClass="RankListView" customModule="kbcuekt" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="4zm-RZ-Cw2"/>
                         <viewControllerLayoutGuide type="bottom" id="NLG-yw-DYV"/>
@@ -338,7 +338,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="RankCustomCell" rowHeight="163" id="rtv-Hf-3DE" customClass="RankCustomCell" customModule="kbucket" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="RankCustomCell" rowHeight="163" id="rtv-Hf-3DE" customClass="RankCustomCell" customModule="kbcuekt" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="163"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="rtv-Hf-3DE" id="Gqt-3k-dfq">
@@ -421,6 +421,7 @@
                                 <sections/>
                             </tableView>
                         </subviews>
+                        <color key="backgroundColor" red="1" green="0.79215686269999996" blue="0.42352941179999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
                     <connections>
                         <outlet property="mTableView" destination="2nn-9F-nOL" id="qMW-RD-yX3"/>
@@ -433,7 +434,7 @@
         <!--Setting View-->
         <scene sceneID="xMi-me-QWT">
             <objects>
-                <viewController storyboardIdentifier="SettingView" useStoryboardIdentifierAsRestorationIdentifier="YES" id="f2Q-mx-QjS" customClass="SettingView" customModule="kbucket" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SettingView" useStoryboardIdentifierAsRestorationIdentifier="YES" id="f2Q-mx-QjS" customClass="SettingView" customModule="kbcuekt" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="kDD-vd-p0M"/>
                         <viewControllerLayoutGuide type="bottom" id="lgR-Vm-WId"/>
@@ -466,7 +467,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="SettingCustomCell" id="zWD-ok-IXv" customClass="SettingCustomCell" customModule="kbucket" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="SettingCustomCell" id="zWD-ok-IXv" customClass="SettingCustomCell" customModule="kbcuekt" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="259" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="zWD-ok-IXv" id="BmQ-jv-BJv">
@@ -509,7 +510,7 @@
         <!--Add Bucket View-->
         <scene sceneID="lrF-8h-QDt">
             <objects>
-                <viewController storyboardIdentifier="AddBucketView" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Wui-La-l6j" customClass="AddBucketView" customModule="kbucket" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="AddBucketView" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Wui-La-l6j" customClass="AddBucketView" customModule="kbcuekt" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Tl5-dc-STf"/>
                         <viewControllerLayoutGuide type="bottom" id="dE6-RC-NcZ"/>
@@ -542,7 +543,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="FirstCustomCell" rowHeight="58" id="Dxj-va-VK1" customClass="FirstCustomCell" customModule="kbucket" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="FirstCustomCell" rowHeight="58" id="Dxj-va-VK1" customClass="FirstCustomCell" customModule="kbcuekt" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="343" height="58"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Dxj-va-VK1" id="N5Q-qU-2a0">
@@ -621,7 +622,7 @@
         <!--Notice View-->
         <scene sceneID="iNX-zp-GL9">
             <objects>
-                <viewController storyboardIdentifier="NoticeView" useStoryboardIdentifierAsRestorationIdentifier="YES" id="7Hn-uk-pWg" customClass="NoticeView" customModule="kbucket" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="NoticeView" useStoryboardIdentifierAsRestorationIdentifier="YES" id="7Hn-uk-pWg" customClass="NoticeView" customModule="kbcuekt" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="fLL-mt-l21"/>
                         <viewControllerLayoutGuide type="bottom" id="Bcp-c4-ScR"/>
@@ -706,7 +707,7 @@
         <!--Pass Word View-->
         <scene sceneID="NpY-tW-Miy">
             <objects>
-                <viewController storyboardIdentifier="PassWordView" useStoryboardIdentifierAsRestorationIdentifier="YES" id="fU7-XY-63b" customClass="PassWordView" customModule="kbucket" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="PassWordView" useStoryboardIdentifierAsRestorationIdentifier="YES" id="fU7-XY-63b" customClass="PassWordView" customModule="kbcuekt" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="3qb-QG-RK8"/>
                         <viewControllerLayoutGuide type="bottom" id="dx7-t4-hMJ"/>
@@ -930,7 +931,7 @@
         <!--Set Back Color View-->
         <scene sceneID="Qcx-c6-Wtt">
             <objects>
-                <viewController storyboardIdentifier="SetBackColorView" useStoryboardIdentifierAsRestorationIdentifier="YES" id="qo1-F8-2Sx" customClass="SetBackColorView" customModule="kbucket" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SetBackColorView" useStoryboardIdentifierAsRestorationIdentifier="YES" id="qo1-F8-2Sx" customClass="SetBackColorView" customModule="kbcuekt" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="UFU-vr-WeC"/>
                         <viewControllerLayoutGuide type="bottom" id="mjn-nV-ZFO"/>
@@ -1224,7 +1225,7 @@
         <!--Question View-->
         <scene sceneID="C2p-m1-z80">
             <objects>
-                <viewController storyboardIdentifier="QuestionView" useStoryboardIdentifierAsRestorationIdentifier="YES" id="VUO-GW-qbi" customClass="QuestionView" customModule="kbucket" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="QuestionView" useStoryboardIdentifierAsRestorationIdentifier="YES" id="VUO-GW-qbi" customClass="QuestionView" customModule="kbcuekt" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="x9h-tI-tL9"/>
                         <viewControllerLayoutGuide type="bottom" id="9TH-LC-boa"/>
@@ -1340,7 +1341,7 @@
         <!--Mgr View-->
         <scene sceneID="3H8-M5-Bpo">
             <objects>
-                <viewController storyboardIdentifier="DBMgrView" useStoryboardIdentifierAsRestorationIdentifier="YES" id="6kp-1q-DNm" customClass="DBMgrView" customModule="kbucket" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DBMgrView" useStoryboardIdentifierAsRestorationIdentifier="YES" id="6kp-1q-DNm" customClass="DBMgrView" customModule="kbcuekt" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="8sI-oF-IRr"/>
                         <viewControllerLayoutGuide type="bottom" id="G97-RC-P9L"/>
@@ -1424,7 +1425,7 @@
         <!--Write View-->
         <scene sceneID="93d-Ep-dPk">
             <objects>
-                <viewController storyboardIdentifier="WriteView" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Ait-vZ-ruu" customClass="WriteView" customModule="kbucket" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="WriteView" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Ait-vZ-ruu" customClass="WriteView" customModule="kbcuekt" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="BWL-2u-fuA"/>
                         <viewControllerLayoutGuide type="bottom" id="1d2-uk-wKK"/>
@@ -1458,7 +1459,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="FirstCustomCell" rowHeight="73" id="gMB-wU-EI3" customClass="FirstCustomCell" customModule="kbucket" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="FirstCustomCell" rowHeight="73" id="gMB-wU-EI3" customClass="FirstCustomCell" customModule="kbcuekt" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="73"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="gMB-wU-EI3" id="Bun-QG-pD5">
@@ -1582,7 +1583,7 @@
         <!--Write Detail View-->
         <scene sceneID="6gR-kz-iwH">
             <objects>
-                <viewController storyboardIdentifier="WriteDetailView" useStoryboardIdentifierAsRestorationIdentifier="YES" id="aMF-eL-1tI" customClass="WriteDetailView" customModule="kbucket" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="WriteDetailView" useStoryboardIdentifierAsRestorationIdentifier="YES" id="aMF-eL-1tI" customClass="WriteDetailView" customModule="kbcuekt" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="CLb-Qo-SHt"/>
                         <viewControllerLayoutGuide type="bottom" id="ReB-Di-d4U"/>
@@ -1764,7 +1765,7 @@
         <!--Share List View-->
         <scene sceneID="NEa-Xw-IRN">
             <objects>
-                <viewController storyboardIdentifier="ShareListView" useStoryboardIdentifierAsRestorationIdentifier="YES" id="ZRx-Kd-yj8" customClass="ShareListView" customModule="kbucket" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ShareListView" useStoryboardIdentifierAsRestorationIdentifier="YES" id="ZRx-Kd-yj8" customClass="ShareListView" customModule="kbcuekt" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="61R-fX-SWO"/>
                         <viewControllerLayoutGuide type="bottom" id="ZU9-da-2rb"/>
@@ -1797,7 +1798,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="0.89260018129999996" blue="0.3228536232" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ShareCustomCell" rowHeight="77" id="vhj-7d-14n" customClass="ShareCustomCell" customModule="kbucket" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ShareCustomCell" rowHeight="77" id="vhj-7d-14n" customClass="ShareCustomCell" customModule="kbcuekt" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="77"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="vhj-7d-14n" id="sLa-3G-C7w">
@@ -1955,7 +1956,7 @@
         <!--Bucket List View-->
         <scene sceneID="1Ww-yb-DKN">
             <objects>
-                <viewController restorationIdentifier="BucketListView" storyboardIdentifier="BucketListView" id="7fi-bK-5j3" customClass="BucketListView" customModule="kbucket" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController restorationIdentifier="BucketListView" storyboardIdentifier="BucketListView" id="7fi-bK-5j3" customClass="BucketListView" customModule="kbcuekt" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jLs-nc-WvN"/>
                         <viewControllerLayoutGuide type="bottom" id="24e-Gz-AeX"/>
@@ -1977,7 +1978,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="BucketCustomCell" rowHeight="163" id="Py4-aF-AGk" customClass="BucketCustomCell" customModule="kbucket" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="BucketCustomCell" rowHeight="163" id="Py4-aF-AGk" customClass="BucketCustomCell" customModule="kbcuekt" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="163"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Py4-aF-AGk" id="bEs-Nr-gt7">
@@ -2045,7 +2046,7 @@
         <!--Share Detail View-->
         <scene sceneID="RqD-5z-TIi">
             <objects>
-                <viewController restorationIdentifier="ShareDetailView" storyboardIdentifier="ShareDetailView" id="ZFz-tf-F7Q" customClass="ShareDetailView" customModule="kbucket" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController restorationIdentifier="ShareDetailView" storyboardIdentifier="ShareDetailView" id="ZFz-tf-F7Q" customClass="ShareDetailView" customModule="kbcuekt" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="RuU-kj-bKC"/>
                         <viewControllerLayoutGuide type="bottom" id="P6e-om-84A"/>
@@ -2195,8 +2196,8 @@
     </scenes>
     <resources>
         <image name="anim2.png" width="100" height="100"/>
-        <image name="dot" width="64" height="64"/>
+        <image name="dot" width="30.719999313354492" height="30.719999313354492"/>
         <image name="nophoto" width="150" height="150"/>
-        <image name="remove" width="100" height="80"/>
+        <image name="remove" width="48" height="38.400001525878906"/>
     </resources>
 </document>
