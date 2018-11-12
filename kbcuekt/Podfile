@@ -7,6 +7,7 @@ target 'kbcuekt' do
 
   # Pods for kbcuekt
 pod 'RealmSwift'
+pod 'Google-Mobile-Ads-SDK'
 
   target 'kbcuektTests' do
     inherit! :search_paths

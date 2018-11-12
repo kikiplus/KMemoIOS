@@ -1,4 +1,5 @@
 PODS:
+  - Google-Mobile-Ads-SDK (7.35.2)
   - Realm (3.11.1):
     - Realm/Headers (= 3.11.1)
   - Realm/Headers (3.11.1)
@@ -6,17 +7,20 @@ PODS:
     - Realm (= 3.11.1)
 
 DEPENDENCIES:
+  - Google-Mobile-Ads-SDK
   - RealmSwift
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
+    - Google-Mobile-Ads-SDK
     - Realm
     - RealmSwift
 
 SPEC CHECKSUMS:
+  Google-Mobile-Ads-SDK: 8f07cc8eac6649fe648cabc97d67c8d20173624a
   Realm: 037c5919b9ceb59d6beed5d3b031096856b119b3
   RealmSwift: c9580133e73ef40ed340401af2dbc9a5790dfea7
 
-PODFILE CHECKSUM: a0ef04beeda78e777714396b2618224cbb5092d3
+PODFILE CHECKSUM: 1ee68fe99df381926ae38a0d5eee9ff2574019e9
 
 COCOAPODS: 1.5.3

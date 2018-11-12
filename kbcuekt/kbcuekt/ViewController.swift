@@ -7,7 +7,7 @@
 //
 
 import UIKit
-//import GoogleMobileAds
+import GoogleMobileAds
 
 class ViewController: UIViewController , IHttpReceive , PopupProtocol {
    
@@ -31,7 +31,7 @@ class ViewController: UIViewController , IHttpReceive , PopupProtocol {
     private let CHECK_VERSION : Int         = 80
   
     private var mSqlQuery  : SQLQuery? = nil
-    //private var bannerView: GADBannerView!
+    private var bannerView: GADBannerView!
     public var mWidgetSendData : String = ""
     private var mAIPopup : CustomPopup?
     
@@ -46,12 +46,12 @@ class ViewController: UIViewController , IHttpReceive , PopupProtocol {
         mSqlQuery = SQLQuery()
          setBackgroundColor()
  
-//        bannerView = GADBannerView(adSize: kGADAdSizeBanner)
-//        addBannerViewToView(bannerView)
-//        bannerView.adUnitID = ContextUtils.KBUCKET_AD_UNIT_ID
-//        bannerView.rootViewController = self
-//        bannerView.load(GADRequest())
-//
+        bannerView = GADBannerView(adSize: kGADAdSizeBanner)
+        addBannerViewToView(bannerView)
+        bannerView.adUnitID = ContextUtils.KBUCKET_AD_UNIT_ID
+        bannerView.rootViewController = self
+        bannerView.load(GADRequest())
+
         let isConnect : Bool = NetworkUtils.isConnectivityStatus()
                         if (isConnect == true) {
             handleMessage(what: CHECK_VERSION, obj: "")
@@ -264,26 +264,26 @@ class ViewController: UIViewController , IHttpReceive , PopupProtocol {
         }
     }
     
-//    func addBannerViewToView(_ bannerView: GADBannerView) {
-//        bannerView.translatesAutoresizingMaskIntoConstraints = false
-//        view.addSubview(bannerView)
-//        view.addConstraints(
-//            [NSLayoutConstraint(item: bannerView,
-//                                attribute: .bottom,
-//                                relatedBy: .equal,
-//                                toItem: bottomLayoutGuide,
-//                                attribute: .top,
-//                                multiplier: 0.9,
-//                                constant: 0),
-//             NSLayoutConstraint(item: bannerView,
-//                                attribute: .centerX,
-//                                relatedBy: .equal,
-//                                toItem: view,
-//                                attribute: .centerX,
-//                                multiplier: 1,
-//                                constant: 0)
-//            ])
-//    }
+    func addBannerViewToView(_ bannerView: GADBannerView) {
+        bannerView.translatesAutoresizingMaskIntoConstraints = false
+        view.addSubview(bannerView)
+        view.addConstraints(
+            [NSLayoutConstraint(item: bannerView,
+                                attribute: .bottom,
+                                relatedBy: .equal,
+                                toItem: bottomLayoutGuide,
+                                attribute: .top,
+                                multiplier: 0.9,
+                                constant: 0),
+             NSLayoutConstraint(item: bannerView,
+                                attribute: .centerX,
+                                relatedBy: .equal,
+                                toItem: view,
+                                attribute: .centerX,
+                                multiplier: 1,
+                                constant: 0)
+            ])
+    }
 
     /**
      * 사용자 정보업데이트 가공 데이타 만드는 메소드
