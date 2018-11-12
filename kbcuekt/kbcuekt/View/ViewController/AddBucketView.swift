@@ -101,7 +101,8 @@ EventProtocol {
     func removeDBData(data : String) {
         KLog.d(tag: TAG, msg: "@@ remove Data Contents : " + data);
         if(mSqlQuery != nil){
-            mSqlQuery?.deleteUserBucket(contents: data)
+            let result : Bool = mSqlQuery?.deleteUserBucket(contents: data) ?? false
+            KLog.d(tag: TAG, msg: "@@ removeDBData result " + String(result))
         }
         
         let inContainsBucket : Bool = mSqlQuery?.containsKbucket(memoContents: data) ?? false

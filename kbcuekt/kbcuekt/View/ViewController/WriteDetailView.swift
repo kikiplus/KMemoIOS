@@ -168,7 +168,8 @@ UIPopoverControllerDelegate,UINavigationControllerDelegate {
     private func removeDBData(Content : String) {
         KLog.d(tag : TAG, msg: "@@ remove Data Contents : " + Content);
         if(mSqlQuery != nil){
-            mSqlQuery?.deleteUserBucket(contents: Content)
+            let result : Bool = mSqlQuery?.deleteUserBucket(contents: Content) ?? false
+            KLog.d(tag: TAG, msg: "@@ removeDBData result " + String(result))
         }
     }
     
