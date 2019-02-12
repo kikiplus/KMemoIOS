@@ -232,6 +232,7 @@ class ShareDetailView : UIViewController , IHttpReceive , UITableViewDelegate, U
    // }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        KLog.d(tag: TAG, msg: "@@ mCommentList count: \(mCommentList.count)")
         return mCommentList.count
     }
     

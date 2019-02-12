@@ -303,6 +303,7 @@ class ShareListView: UIViewController , IHttpReceive, UITableViewDelegate, UITab
            uvc.mBucket.mDate = mBucketDataList[index].mDate
            uvc.mBucket.mImageURl = mBucketDataList[index].mImageURl
            present(uvc, animated: true, completion: nil)
+           KLog.d(tag: TAG, msg: "receiveEventFromViewItem mod End");
            
            break;
         default:

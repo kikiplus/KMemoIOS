@@ -19,7 +19,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         let id = ContextUtils.KBUCKET_AD_UNIT_ID
         GADMobileAds.configure(withApplicationID: id)
-        
         return true
     }
 
