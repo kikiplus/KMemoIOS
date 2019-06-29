@@ -82,10 +82,8 @@
 		0003F0B4217C3AF100C3BDD8 /* UpdateApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0003F0A5217C3AF100C3BDD8 /* UpdateApp.swift */; };
 		0003F0B5217C3AF100C3BDD8 /* FirstCustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0003F0A6217C3AF100C3BDD8 /* FirstCustomCell.swift */; };
 		0003F0B7217C3B6500C3BDD8 /* NoticeCustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0003F0B6217C3B6500C3BDD8 /* NoticeCustomCell.swift */; };
-		00A7E8F221945A3F00E56D12 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00A7E8EE219455C900E56D12 /* Realm.framework */; };
-		00A7E8F321945A3F00E56D12 /* Realm.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 00A7E8EE219455C900E56D12 /* Realm.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		00A7E8F421945A4200E56D12 /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00A7E8EF219455C900E56D12 /* RealmSwift.framework */; };
-		00A7E8F521945A4200E56D12 /* RealmSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 00A7E8EF219455C900E56D12 /* RealmSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		0016DE3622C01FF8002C2295 /* Realm.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0016DE3122C01F07002C2295 /* Realm.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		0016DE3822C01FF8002C2295 /* RealmSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0016DE3222C01F07002C2295 /* RealmSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		00A7E8F721945B8D00E56D12 /* ConstPopup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A7E8F621945B8D00E56D12 /* ConstPopup.swift */; };
 		00A7E8FB21945BA000E56D12 /* UserUpdateTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A7E8F921945BA000E56D12 /* UserUpdateTask.swift */; };
 		00A7E8FC21945BA000E56D12 /* AppUpdateTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A7E8FA21945BA000E56D12 /* AppUpdateTask.swift */; };
@@ -124,8 +122,8 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				00A7E8F521945A4200E56D12 /* RealmSwift.framework in Embed Frameworks */,
-				00A7E8F321945A3F00E56D12 /* Realm.framework in Embed Frameworks */,
+				0016DE3822C01FF8002C2295 /* RealmSwift.framework in Embed Frameworks */,
+				0016DE3622C01FF8002C2295 /* Realm.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -214,8 +212,8 @@
 		0003F0A5217C3AF100C3BDD8 /* UpdateApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UpdateApp.swift; sourceTree = "<group>"; };
 		0003F0A6217C3AF100C3BDD8 /* FirstCustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstCustomCell.swift; sourceTree = "<group>"; };
 		0003F0B6217C3B6500C3BDD8 /* NoticeCustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoticeCustomCell.swift; sourceTree = "<group>"; };
-		00A7E8EE219455C900E56D12 /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Realm.framework; path = Frameworks/Realm.framework; sourceTree = "<group>"; };
-		00A7E8EF219455C900E56D12 /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RealmSwift.framework; path = Frameworks/RealmSwift.framework; sourceTree = "<group>"; };
+		0016DE3122C01F07002C2295 /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Realm.framework; path = Frameworks/Realm.framework; sourceTree = "<group>"; };
+		0016DE3222C01F07002C2295 /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RealmSwift.framework; path = Frameworks/RealmSwift.framework; sourceTree = "<group>"; };
 		00A7E8F621945B8D00E56D12 /* ConstPopup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstPopup.swift; sourceTree = "<group>"; };
 		00A7E8F921945BA000E56D12 /* UserUpdateTask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserUpdateTask.swift; sourceTree = "<group>"; };
 		00A7E8FA21945BA000E56D12 /* AppUpdateTask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppUpdateTask.swift; sourceTree = "<group>"; };
@@ -241,8 +239,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				00A7E8F421945A4200E56D12 /* RealmSwift.framework in Frameworks */,
-				00A7E8F221945A3F00E56D12 /* Realm.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -481,8 +477,8 @@
 		00A7E8ED219455C900E56D12 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				00A7E8EE219455C900E56D12 /* Realm.framework */,
-				00A7E8EF219455C900E56D12 /* RealmSwift.framework */,
+				0016DE3122C01F07002C2295 /* Realm.framework */,
+				0016DE3222C01F07002C2295 /* RealmSwift.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -684,7 +680,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nbash \"${BUILT_PRODUCTS_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework/strip-frameworks.sh\"\n\n";
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nbash \"${BUILT_PRODUCTS_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework/strip-frameworks.sh\"\n    \n";
 		};
 		368D9D31670119804067705D /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
