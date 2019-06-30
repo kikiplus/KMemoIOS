@@ -22,12 +22,21 @@ class DBMgrView : UIViewController {
         super.viewDidLoad()
         KLog.d(tag: TAG, msg: "viewDidLoad");
          mSqlQuery = SQLQuery()
-        
+        setBackgroundColor()
     }
     
     @IBAction func onBackPressed(_ sender: Any) {
         KLog.d(tag: TAG, msg: "onBackPressed")
         ViewUtils.changeView(strView: ContextUtils.MAIN_VIEW, viewCtrl: self)
+    }
+    
+    private func setBackgroundColor() {
+        let mBackColor : String = UserDefault.read(key: ContextUtils.BACK_MEMO)
+        
+        if (mBackColor.count > 0){
+            let uColor = UIColor(hexRGB: mBackColor)
+            view.backgroundColor = uColor
+        }
     }
     
     @IBAction func onClick(_ sender: Any) {

@@ -33,7 +33,18 @@ class QuestionView : UIViewController , UITextViewDelegate {
         tvContents.delegate = self
         
         setTitleIndex(index: 1)
-        AppUtils.sendTrackerScreen(screen: "문의화면");
+        AppUtils.sendTrackerScreen(screen: "문의화면")
+        setBackgroundColor()
+    }
+    
+    
+    private func setBackgroundColor() {
+        let mBackColor : String = UserDefault.read(key: ContextUtils.BACK_MEMO)
+        
+        if (mBackColor.count > 0){
+            let uColor = UIColor(hexRGB: mBackColor)
+            view.backgroundColor = uColor
+        }
     }
     
    private func finish(){

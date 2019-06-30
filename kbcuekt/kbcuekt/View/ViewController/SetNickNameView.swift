@@ -27,7 +27,17 @@ class SetNickNameView : UIViewController {
             etName.becomeFirstResponder()
             etName.text = nickname
         }
+        setBackgroundColor()
         AppUtils.sendTrackerScreen(screen: "닉네임변경화면");
+    }
+    
+    private func setBackgroundColor() {
+        let mBackColor : String = UserDefault.read(key: ContextUtils.BACK_MEMO)
+        
+        if (mBackColor.count > 0){
+            let uColor = UIColor(hexRGB: mBackColor)
+            view.backgroundColor = uColor
+        }
     }
     
     @IBAction func onClick(_ sender: Any) {

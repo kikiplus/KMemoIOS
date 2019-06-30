@@ -37,7 +37,7 @@ class SettingView: UIViewController,  UITableViewDelegate, UITableViewDataSource
         mTableView.delegate = self
         mTableView.dataSource = self
         mTableView.separatorStyle = .none
-        
+        setBackgroundColor()
         setListData()
         handleMessage(what: SET_NOTICE_LIST, obj: "")
     }
@@ -49,6 +49,16 @@ class SettingView: UIViewController,  UITableViewDelegate, UITableViewDataSource
             mList.append(String(item))
         }
         
+    }
+    
+    private func setBackgroundColor() {
+        let mBackColor : String = UserDefault.read(key: ContextUtils.BACK_MEMO)
+        
+        if (mBackColor.count > 0){
+            let uColor = UIColor(hexRGB: mBackColor)
+            view.backgroundColor = uColor
+            mTableView.backgroundColor = uColor
+        }
     }
     
     @IBAction func onBackPressed(_ sender: Any) {

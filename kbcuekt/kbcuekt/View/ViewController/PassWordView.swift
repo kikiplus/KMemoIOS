@@ -65,10 +65,20 @@ class PassWordView : UIViewController {
         else if mSetting == "GET" {
             isPasswordset = false
         }
+        setBackgroundColor()
   
-//        AppUtils.sendTrackerScreen(this, "암호설정화면");
+        AppUtils.sendTrackerScreen(screen: "암호설정화면")
     }
 
+    private func setBackgroundColor() {
+        let mBackColor : String = UserDefault.read(key: ContextUtils.BACK_MEMO)
+        
+        if (mBackColor.count > 0){
+            let uColor = UIColor(hexRGB: mBackColor)
+            view.backgroundColor = uColor
+        }
+    }
+    
     @IBAction func onBackPressed(_ sender: Any) {
         back(strBack: ContextUtils.MAIN_VIEW)
     }
