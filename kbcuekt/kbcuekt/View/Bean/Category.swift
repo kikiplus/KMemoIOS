@@ -14,19 +14,19 @@ class Category  {
    /** 카테고리 코드 */
    private var mCategoryCode : Int {
         get {
-            return mCategoryCode
+            return self.mCategoryCode
         }
         set(newCategoryCdoe){
-            mCategoryCode = newCategoryCdoe
+            self.mCategoryCode = newCategoryCdoe
         }
     }
 	/** 카테고리명 */
     private var mCategoryName : String{
         get {
-            return mCategoryName
+            return self.mCategoryName
         }
         set (newCategoryName){
-            mCategoryName = newCategoryName
+            self.mCategoryName = newCategoryName
         }
     }
     

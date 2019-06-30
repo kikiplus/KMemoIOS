@@ -230,6 +230,9 @@ UIPopoverControllerDelegate,UINavigationControllerDelegate {
             KLog.d(tag: TAG, msg: "onClick btDel")
             let title = AppUtils.localizedString(forKey : "delete_popup_title")
             let content = AppUtils.localizedString(forKey : "delete_popup_content")
+            
+             KLog.d(tag: TAG, msg: "title : " + title  + " content : " + content)
+            
             //             mConfirmPopup = new ConfirmPopup(this, title, ": " + mContents + "\n\n " + content, R.layout.popup_confirm, this, OnPopupEventListener.POPUP_BUCKET_DELETE);
             //             mConfirmPopup.showDialog()
             
@@ -240,6 +243,8 @@ UIPopoverControllerDelegate,UINavigationControllerDelegate {
             KLog.d(tag: TAG, msg: "onClick btShare")
             let title = AppUtils.localizedString(forKey : "share_popup_title")
             let content = AppUtils.localizedString(forKey : "share_popup_content")
+            
+             KLog.d(tag: TAG, msg: "title : " + title  + " content : " + content)
             //             mConfirmPopup = new ConfirmPopup(this, title, ": " + mContents + "\n\n " + content, R.layout.popup_confirm, this, OnPopupEventListener.POPUP_BUCKET_SHARE);
             //             mConfirmPopup.showDialog();
             handleMessage(what: UPLOAD_BUCKET, obj: "")
@@ -318,31 +323,25 @@ UIPopoverControllerDelegate,UINavigationControllerDelegate {
         KLog.d(tag : TAG, msg : "@@ onHttpReceive actionId: " + String(actionId));
         KLog.d(tag : TAG, msg : "@@ onHttpReceive  type: " + String(type));
         
-        var isValid : Bool  = false
-        
         if (actionId == ConstHTTP.INSERT_BUCKET) {
             if (type == ConstHTTP.HTTP_FAIL) {
                 let message = AppUtils.localizedString(forKey : "write_bucekt_fail_string")
                 handleMessage(what: TOAST_MASSEGE, obj: message)
             } else {
-                if (data != nil) {
-                    do {
-                        if let jsonString = try JSONSerialization.jsonObject(with: data, options: []) as? [String: Any] {
-                            //mImageIdx = json.getInt("idx")
-                        }
-                    } catch {
-                        KLog.d(tag : TAG, msg : "@@ Exception ")
+                do {
+                    if (try JSONSerialization.jsonObject(with: data, options: []) as? [String: Any]) != nil {
+                        //mImageIdx = json.getInt("idx")
                     }
-                    
-                    if (isValid == true) {
-                        // 이미지가 있는 경우 전송함
-                        if (mPhotoPath != nil && mPhotoPath.count > 0 ) {
-                            handleMessage(what: UPLOAD_IMAGE, obj: "")
-                        } else {
-                            let message = AppUtils.localizedString(forKey : "write_bucekt_success_string")
-                            handleMessage(what: TOAST_MASSEGE, obj: message)
-                        }
-                    }
+                } catch {
+                    KLog.d(tag : TAG, msg : "@@ Exception ")
+                }
+                
+                // 이미지가 있는 경우 전송함
+                if (mPhotoPath.count > 0 ) {
+                    handleMessage(what: UPLOAD_IMAGE, obj: "")
+                } else {
+                    let message = AppUtils.localizedString(forKey : "write_bucekt_success_string")
+                    handleMessage(what: TOAST_MASSEGE, obj: message)
                 }
             }
         }// 이미지 업로드 결과
@@ -351,10 +350,8 @@ UIPopoverControllerDelegate,UINavigationControllerDelegate {
                 let message = AppUtils.localizedString(forKey : "upload_image_fail_string")
                 handleMessage(what: TOAST_MASSEGE, obj: message)
             } else {
-                if (isValid == true) {
-                    let message = AppUtils.localizedString(forKey : "write_bucekt_success_string")
-                    handleMessage(what: TOAST_MASSEGE, obj: message)
-                }
+                let message = AppUtils.localizedString(forKey : "write_bucekt_success_string")
+                handleMessage(what: TOAST_MASSEGE, obj: message)
             }
         }
     }
@@ -389,6 +386,8 @@ UIPopoverControllerDelegate,UINavigationControllerDelegate {
         case SELECT_BUCKET_CATEGORY:
             let title = AppUtils.localizedString(forKey : "category_popup_title")
             let content = AppUtils.localizedString(forKey : "category_popup_content")
+            
+            KLog.d(tag: TAG, msg: "title : " + title  + " content : " + content)
             
             var list : Array<Category> = Array()
             list.append(Category(name : "LIEF", code : 1))
@@ -437,7 +436,7 @@ UIPopoverControllerDelegate,UINavigationControllerDelegate {
         dismiss(animated: true, completion: nil)
     }
     
-   @objc func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
+    @objc func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
         KLog.d(tag: TAG, msg: "imagePickerController" )
         let chosenImage = info["UIImagePickerControllerOriginalImage"] as! UIImage
         hideImageAttachButton(ishide: true)
