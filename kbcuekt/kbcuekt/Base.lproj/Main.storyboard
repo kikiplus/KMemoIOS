@@ -2846,6 +2846,9 @@
                                 <state key="normal" title="Send">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="onClick:" destination="ZFz-tf-F7Q" eventType="touchUpInside" id="GMZ-Cd-wi8"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="contentLabel" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="t1s-zB-QZj">
                                 <rect key="frame" x="26" y="140" width="175" height="30"/>
@@ -2936,6 +2939,8 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="btSend" destination="UtB-37-a4B" id="g41-Oo-33q"/>
+                        <outlet property="etComment" destination="HS6-xX-3ek" id="a2L-zd-PMA"/>
                         <outlet property="mBtShareDate" destination="t0c-fl-sbr" id="Cmg-fD-x5a"/>
                         <outlet property="mEtShareContent" destination="t1s-zB-QZj" id="0qQ-l9-DHv"/>
                         <outlet property="mIvShareImage" destination="P72-Hp-uuC" id="QkC-lS-jEK"/>

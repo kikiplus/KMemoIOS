@@ -9,7 +9,7 @@
 
 class KLog{
     
-    public static var VIEW_LOG = true
+    public static var VIEW_LOG = false
     
     init() {
        

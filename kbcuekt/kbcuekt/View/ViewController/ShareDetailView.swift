@@ -28,7 +28,9 @@ class ShareDetailView : UIViewController , IHttpReceive , UITableViewDelegate, U
     private var mSqlQuery : SQLQuery? = nil
     public var mBucket  = Bucket()
 
-   // private CommentListAdpater mListAdapter = null;
+    @IBOutlet var etComment: UITextField!
+    @IBOutlet var btSend: UIButton!
+    // private CommentListAdpater mListAdapter = null;
    // private ListView mListView = null;
    // private ConfirmPopup mConfirmPopup = null;
     
@@ -98,7 +100,8 @@ class ShareDetailView : UIViewController , IHttpReceive , UITableViewDelegate, U
             print("JSON 파상 에러")
         }
         
-        if (actionId == ConstHTTP.COMMENT_LIST) {
+        if (actionId == ConstHTTP.COMMENT_LIST)
+        {
             //  KProgressDialog.setDataLoadingDialog(this, false, null, false);
            if (type == ConstHTTP.HTTP_OK && isValid == true) {
                 do {
@@ -127,25 +130,36 @@ class ShareDetailView : UIViewController , IHttpReceive , UITableViewDelegate, U
            } else {
                  handleMessage(what: SERVER_LOADING_FAIL, obj: "")
            }
+        }else if(actionId == ConstHTTP.INSERT_COMMENT){
+          if (type == ConstHTTP.HTTP_OK){
+            handleMessage(what: LOAD_COMMENT_LIST, obj: "")
+          }else{
+            handleMessage(what: SERVER_LOADING_FAIL, obj: "")
+          }
         }
     }
 
         @IBAction func onClick(_ sender: Any) {
             switch(sender  as! UIButton ){
-//         case R.id.comment_layout_sendBtn:
-//    //             String text = ((EditText) findViewById(R.id.comment_layout_text)).getText().toString();
-//    //             if (text.replaceAll(" ", "").equals("")) {
-//    //                 break;
-//    //             }
-//    //             KProgressDialog.setDataLoadingDialog(this, true, this.getString(R.string.loading_string), true);
-//    //             HttpUrlTaskManager httpUrlTaskManager = new HttpUrlTaskManager(ContextUtils.INSERT_COMMENT_URL, true, this, IHttpReceive.INSERT_COMMENT);
-//    //             HashMap<String, Object> map = new HashMap<String, Object>();
-//    //             map.put("NICKNAME", mUserNickname);
-//    //             map.put("CONTENT", text);
-//    //             map.put("BUCKET_NO", mBucketNo + "");
-//    //             httpUrlTaskManager.execute(StringUtils.getHTTPPostSendData(map));
-//    //             ((EditText) findViewById(R.id.comment_layout_text)).setText("");
-//    //             break;
+            case btSend:
+                let text = etComment.text!.replace(target: " ", withString: "")
+                if (text.count > 0){
+                    //    //             KProgressDialog.setDataLoadingDialog(this, true, this.getString(R.string.loading_string), true);
+                    
+                    let url : String = ContextUtils.INSERT_COMMENT_URL
+                    let httpUrlTaskManager : HttpUrlTaskManager = HttpUrlTaskManager(url : url, post : true, receive : self,
+                        id: ConstHTTP.INSERT_COMMENT)
+                    let sender : [String: String] = [
+                        "NICKNAME" : String(mUserNickname),
+                        "CONTENT" : String(text),
+                        "BUCKET_NO" : String(idx)
+                    ]
+                    let data : String = StringUtils.getHTTPPostSendData(sendData : sender)
+                    httpUrlTaskManager.actionTaskWithData(data : data)
+                    etComment.text = ""
+                }
+                break
+
 //    //         case R.id.share_contents_imageview:
 //    //             if (mDetailImageFileName != null) {
 //    //                 ImagePopup popup = new ImagePopup(this, R.layout.popup_img, mDetailImageFileName, getWindow());
