@@ -53,6 +53,8 @@ UIPopoverControllerDelegate,UINavigationControllerDelegate {
     @IBOutlet weak var btRemoveImage: UIButton!
     // private ConfirmPopup mConfirmPopup = null;
     // private SpinnerListPopup mCategoryPopup = null;
+    let mBackColor : String = UserDefault.read(key: ContextUtils.BACK_MEMO)
+    
     
     var picker:UIImagePickerController? = UIImagePickerController()
     
@@ -71,6 +73,15 @@ UIPopoverControllerDelegate,UINavigationControllerDelegate {
         setData()
         picker?.delegate = self
         AppUtils.sendTrackerScreen(screen: "가지상세화면");
+        setBackgroundColor()
+    }
+    
+    private func setBackgroundColor() {
+        if (mBackColor.count > 0){
+            let uColor = UIColor(hexRGB: mBackColor)
+            view.backgroundColor = uColor
+            //mTableView.backgroundColor = uColor
+        }
     }
     
     /**
