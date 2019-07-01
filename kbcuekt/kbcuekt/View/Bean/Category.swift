@@ -11,24 +11,10 @@ import UIKit
 
 class Category  {
     
-   /** 카테고리 코드 */
-   private var mCategoryCode : Int {
-        get {
-            return self.mCategoryCode
-        }
-        set(newCategoryCdoe){
-            self.mCategoryCode = newCategoryCdoe
-        }
-    }
+    /** 카테고리 코드 */
+    var mCategoryCode : Int  = 0
 	/** 카테고리명 */
-    private var mCategoryName : String{
-        get {
-            return self.mCategoryName
-        }
-        set (newCategoryName){
-            self.mCategoryName = newCategoryName
-        }
-    }
+    var mCategoryName : String = ""
     
     /**
      * 생성자

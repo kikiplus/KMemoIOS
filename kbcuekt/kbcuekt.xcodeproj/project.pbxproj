@@ -45,9 +45,7 @@
 		0003F04B217C38A600C3BDD8 /* UserDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0003EFB0217C378F00C3BDD8 /* UserDefault.swift */; };
 		0003F04C217C38A600C3BDD8 /* StringUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0003EFB1217C378F00C3BDD8 /* StringUtils.swift */; };
 		0003F04D217C38A600C3BDD8 /* DateUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0003EFB2217C378F00C3BDD8 /* DateUtils.swift */; };
-		0003F04E217C38AE00C3BDD8 /* SQLQuery.java in Sources */ = {isa = PBXBuildFile; fileRef = 0003EFB4217C378F00C3BDD8 /* SQLQuery.java */; };
 		0003F04F217C38AE00C3BDD8 /* SQLiteAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0003EFB5217C378F00C3BDD8 /* SQLiteAdapter.swift */; };
-		0003F050217C38AE00C3BDD8 /* SQLiteAdapter.java in Sources */ = {isa = PBXBuildFile; fileRef = 0003EFB6217C378F00C3BDD8 /* SQLiteAdapter.java */; };
 		0003F051217C38AE00C3BDD8 /* SQLQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0003EFB7217C378F00C3BDD8 /* SQLQuery.swift */; };
 		0003F052217C38B200C3BDD8 /* ErrorLogUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0003EFB8217C378F00C3BDD8 /* ErrorLogUtils.swift */; };
 		0003F053217C38B200C3BDD8 /* ScreenUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0003EFB9217C378F00C3BDD8 /* ScreenUtils.swift */; };
@@ -57,7 +55,6 @@
 		0003F057217C38B200C3BDD8 /* KLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0003EFBD217C378F00C3BDD8 /* KLog.swift */; };
 		0003F058217C38B200C3BDD8 /* DataUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0003EFBE217C378F00C3BDD8 /* DataUtils.swift */; };
 		0003F059217C38B200C3BDD8 /* LinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0003EFBF217C378F00C3BDD8 /* LinkedList.swift */; };
-		0003F05A217C38B600C3BDD8 /* realmMgr.java in Sources */ = {isa = PBXBuildFile; fileRef = 0003EFAA217C378F00C3BDD8 /* realmMgr.java */; };
 		0003F05B217C38BE00C3BDD8 /* HttpUrlTaskManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0003EF9D217C378F00C3BDD8 /* HttpUrlTaskManager.swift */; };
 		0003F05C217C38BE00C3BDD8 /* IHttpReceive.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0003EF9E217C378F00C3BDD8 /* IHttpReceive.swift */; };
 		0003F060217C38BE00C3BDD8 /* HttpUrlFileUploadManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0003EFA2217C378F00C3BDD8 /* HttpUrlFileUploadManager.swift */; };
@@ -134,7 +131,6 @@
 		0003EF23217C357C00C3BDD8 /* kbcuekt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = kbcuekt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0003EF26217C357C00C3BDD8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0003EF28217C357C00C3BDD8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		0003EF2B217C357C00C3BDD8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0003EF2D217C357D00C3BDD8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0003EF30217C357D00C3BDD8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0003EF32217C357D00C3BDD8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -171,7 +167,6 @@
 		0003EF9D217C378F00C3BDD8 /* HttpUrlTaskManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpUrlTaskManager.swift; sourceTree = "<group>"; };
 		0003EF9E217C378F00C3BDD8 /* IHttpReceive.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IHttpReceive.swift; sourceTree = "<group>"; };
 		0003EFA2217C378F00C3BDD8 /* HttpUrlFileUploadManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpUrlFileUploadManager.swift; sourceTree = "<group>"; };
-		0003EFAA217C378F00C3BDD8 /* realmMgr.java */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.java; path = realmMgr.java; sourceTree = "<group>"; };
 		0003EFAC217C378F00C3BDD8 /* MediaUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MediaUtils.swift; sourceTree = "<group>"; };
 		0003EFAD217C378F00C3BDD8 /* ContextUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContextUtils.swift; sourceTree = "<group>"; };
 		0003EFAE217C378F00C3BDD8 /* NetworkUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkUtils.swift; sourceTree = "<group>"; };
@@ -179,9 +174,7 @@
 		0003EFB0217C378F00C3BDD8 /* UserDefault.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDefault.swift; sourceTree = "<group>"; };
 		0003EFB1217C378F00C3BDD8 /* StringUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringUtils.swift; sourceTree = "<group>"; };
 		0003EFB2217C378F00C3BDD8 /* DateUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateUtils.swift; sourceTree = "<group>"; };
-		0003EFB4217C378F00C3BDD8 /* SQLQuery.java */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.java; path = SQLQuery.java; sourceTree = "<group>"; };
 		0003EFB5217C378F00C3BDD8 /* SQLiteAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SQLiteAdapter.swift; sourceTree = "<group>"; };
-		0003EFB6217C378F00C3BDD8 /* SQLiteAdapter.java */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.java; path = SQLiteAdapter.java; sourceTree = "<group>"; };
 		0003EFB7217C378F00C3BDD8 /* SQLQuery.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SQLQuery.swift; sourceTree = "<group>"; };
 		0003EFB8217C378F00C3BDD8 /* ErrorLogUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorLogUtils.swift; sourceTree = "<group>"; };
 		0003EFB9217C378F00C3BDD8 /* ScreenUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScreenUtils.swift; sourceTree = "<group>"; };
@@ -226,6 +219,7 @@
 		00A7E917219463F500E56D12 /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = Main.strings; sourceTree = "<group>"; };
 		00A7E919219463F500E56D12 /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = Localizable.strings; sourceTree = "<group>"; };
 		00A7E91B219463F500E56D12 /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = InfoPlist.strings; sourceTree = "<group>"; };
+		00EAD19122CA468B000F302F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		142DF09CC1BEB64A48916C65 /* Pods-kbcuektTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kbcuektTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-kbcuektTests/Pods-kbcuektTests.debug.xcconfig"; sourceTree = "<group>"; };
 		377CBB3FE195C3D2000DD487 /* Pods-kbcuektUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kbcuektUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-kbcuektUITests/Pods-kbcuektUITests.release.xcconfig"; sourceTree = "<group>"; };
 		6CAF4D4B8A0A226A60C370A0 /* Pods-kbcuektUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kbcuektUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-kbcuektUITests/Pods-kbcuektUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -405,7 +399,6 @@
 			children = (
 				00A7E8F821945BA000E56D12 /* task */,
 				0003EF9C217C378F00C3BDD8 /* http */,
-				0003EFA9217C378F00C3BDD8 /* realm */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -418,14 +411,6 @@
 				0003EFA2217C378F00C3BDD8 /* HttpUrlFileUploadManager.swift */,
 			);
 			path = http;
-			sourceTree = "<group>";
-		};
-		0003EFA9217C378F00C3BDD8 /* realm */ = {
-			isa = PBXGroup;
-			children = (
-				0003EFAA217C378F00C3BDD8 /* realmMgr.java */,
-			);
-			path = realm;
 			sourceTree = "<group>";
 		};
 		0003EFAB217C378F00C3BDD8 /* Utils */ = {
@@ -455,9 +440,7 @@
 		0003EFB3217C378F00C3BDD8 /* sqlite */ = {
 			isa = PBXGroup;
 			children = (
-				0003EFB4217C378F00C3BDD8 /* SQLQuery.java */,
 				0003EFB5217C378F00C3BDD8 /* SQLiteAdapter.swift */,
-				0003EFB6217C378F00C3BDD8 /* SQLiteAdapter.java */,
 				0003EFB7217C378F00C3BDD8 /* SQLQuery.swift */,
 			);
 			path = sqlite;
@@ -780,7 +763,6 @@
 				0003F0B4217C3AF100C3BDD8 /* UpdateApp.swift in Sources */,
 				0003F03A217C388B00C3BDD8 /* SetNickNameView.swift in Sources */,
 				0003F034217C388B00C3BDD8 /* SetBackColorView.swift in Sources */,
-				0003F050217C38AE00C3BDD8 /* SQLiteAdapter.java in Sources */,
 				0003F059217C38B200C3BDD8 /* LinkedList.swift in Sources */,
 				0003F04D217C38A600C3BDD8 /* DateUtils.swift in Sources */,
 				00A7E8FB21945BA000E56D12 /* UserUpdateTask.swift in Sources */,
@@ -790,7 +772,6 @@
 				0003F04A217C38A600C3BDD8 /* MemoryUtils.swift in Sources */,
 				0003F03F217C388B00C3BDD8 /* PDFViewerView.swift in Sources */,
 				0003F0B0217C3AF100C3BDD8 /* PostData.swift in Sources */,
-				0003F05A217C38B600C3BDD8 /* realmMgr.java in Sources */,
 				0003F049217C38A600C3BDD8 /* NetworkUtils.swift in Sources */,
 				0003F043217C388B00C3BDD8 /* SettingVIew.swift in Sources */,
 				0003F060217C38BE00C3BDD8 /* HttpUrlFileUploadManager.swift in Sources */,
@@ -819,7 +800,6 @@
 				0003F03C217C388B00C3BDD8 /* PassWordView.swift in Sources */,
 				0003F055217C38B200C3BDD8 /* ByteUtils.swift in Sources */,
 				0003F04B217C38A600C3BDD8 /* UserDefault.swift in Sources */,
-				0003F04E217C38AE00C3BDD8 /* SQLQuery.java in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -858,7 +838,7 @@
 		0003EF2A217C357C00C3BDD8 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				0003EF2B217C357C00C3BDD8 /* Base */,
+				00EAD19122CA468B000F302F /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";

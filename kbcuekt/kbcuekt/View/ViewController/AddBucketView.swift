@@ -125,7 +125,8 @@ EventProtocol {
             message = AppUtils.localizedString(forKey: "share_add_popup_ok")
             if(mSqlQuery != nil){
                 let date = DateUtils.getStringDateFormat(pattern: DateUtils.DATE_YYMMDD_PATTER)
-                mSqlQuery?.insertUserSetting(contents: Content, date: date, completeYN: "N", completedDate: "")
+                let bResult = mSqlQuery?.insertUserSetting(contents: Content, date: date, completeYN: "N", completedDate: "")
+                  KLog.d(tag: TAG, msg: "@@ addDBData : "  + String(bResult!))
             }
         }else{
             message = AppUtils.localizedString(forKey: "check_input_bucket_string")
