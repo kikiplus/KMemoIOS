@@ -77,7 +77,11 @@ class HttpUrlFileUploadManager {
         let task = URLSession.shared.dataTask(with: request, completionHandler : {
             (data : Data?, response : URLResponse?, error : Error?) -> Void in
             
-             KLog.d(tag: "ttt", msg: "@@ url4 : "  )
+            KLog.d(tag: "ttt", msg: "@@ url4 : "  )
+            if(response == nil){
+                KLog.d(tag: "ttt", msg: "@@ response : nil ")
+                return;
+            }
             guard let httpResponse = response as? HTTPURLResponse, httpResponse.statusCode == 200 else{
                  self.mIHttpReceive.onHttpReceive(type: ConstHTTP.HTTP_FAIL, actionId: self.mId, data: data! )
                 return

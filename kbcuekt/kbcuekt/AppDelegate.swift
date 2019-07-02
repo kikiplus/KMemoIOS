@@ -8,6 +8,7 @@
 
 import UIKit
 import GoogleMobileAds
+import UserNotifications
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -19,6 +20,23 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         let id = ContextUtils.KBUCKET_AD_UNIT_ID
         GADMobileAds.configure(withApplicationID: id)
+        
+        //APNS notification
+        if #available(iOS 10, *){
+            UNUserNotificationCenter.current().requestAuthorization(options : [.alert, .sound, .badge]){
+                (granted, error) in
+                guard granted else { return }
+                DispatchQueue.main.async {
+                    application.registerForRemoteNotifications()
+                }
+            }
+        }else if #available(iOS 8, *){
+            UIApplication.shared.registerUserNotificationSettings(UIUserNotificationSettings(types: [.badge, .sound, .alert], categories: nil))
+            UIApplication.shared.registerForRemoteNotifications()
+        }else{
+            application.registerUserNotificationSettings(UIUserNotificationSettings(types: [.badge, .sound, .alert], categories: nil))
+        }
+        
         return true
     }
 
@@ -42,6 +60,22 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func applicationWillTerminate(_ application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+    }
+    
+    func application(_ application: UIApplication, didFailToRegisterForRemoteNotificationsWithError error: Error) {
+        print("@@ APNS registaration failed:  \(error)")
+        KLog.d(tag: "AppDelegate", msg: "@@ APNS registaration failed:  \(error)")
+    }
+    
+    func application(_ application: UIApplication, didReceiveRemoteNotification userInfo: [AnyHashable : Any]) {
+        print("@@ Push notification received : \(userInfo)")
+        KLog.d(tag: "AppDelegate", msg: "@@ Push notification received : \(userInfo)")
+    }
+    
+    func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
+        let deviceTokenString = deviceToken.reduce("", {$0 + String(format: "%02X", $1)})
+        print("@@ APNS device token \(deviceTokenString)")
+        KLog.d(tag: "AppDelegate", msg: "@@ APNS device token \(deviceTokenString)")
     }
 
 

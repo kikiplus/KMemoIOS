@@ -106,7 +106,7 @@ class SQLQuery{
         //bucketObj.mContent = newContents
 
         try! realm.write {
-            realm.add(bucketObj, update: true)
+            realm.add(bucketObj, update: Realm.UpdatePolicy.all)
         }
         KLog.d(tag: TAG, msg: "success updateMemoContent mContent : " + newContents)
     }

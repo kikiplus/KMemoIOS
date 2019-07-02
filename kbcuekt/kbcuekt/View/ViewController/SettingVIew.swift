@@ -25,6 +25,8 @@ class SettingView: UIViewController,  UITableViewDelegate, UITableViewDataSource
     
     var expandedRows = Set<Int>()
     @IBOutlet weak var mTableView: UITableView!
+    let mBackColor : String = UserDefault.read(key: ContextUtils.BACK_MEMO)
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -52,8 +54,6 @@ class SettingView: UIViewController,  UITableViewDelegate, UITableViewDataSource
     }
     
     private func setBackgroundColor() {
-        let mBackColor : String = UserDefault.read(key: ContextUtils.BACK_MEMO)
-        
         if (mBackColor.count > 0){
             let uColor = UIColor(hexRGB: mBackColor)
             view.backgroundColor = uColor
@@ -101,6 +101,11 @@ class SettingView: UIViewController,  UITableViewDelegate, UITableViewDataSource
         cell.mIdx = indexPath.row
         cell.selectionStyle = .none
         cell.setOnEventListener(listenr: self)
+        
+        if (mBackColor.count > 0){
+            let uColor = UIColor(hexRGB: mBackColor)
+            cell.backgroundColor = uColor
+        }
         
         return cell
     }
@@ -150,6 +155,12 @@ class SettingView: UIViewController,  UITableViewDelegate, UITableViewDataSource
             }
             break
         case 8://공유하기
+            let text = "Bucket, Things your dreams - KMemo Branch, Your Dream Bucket Introducing KMemo Branch App."
+            let textToShare = [text]
+            let activityVC = UIActivityViewController(activityItems: textToShare, applicationActivities: nil)
+            activityVC.popoverPresentationController?.sourceView = self.view
+            activityVC.excludedActivityTypes = [UIActivity.ActivityType.airDrop]
+            self.present(activityVC, animated: true, completion: nil)
             break
         case 9://버킷리스트 100
             changeView(viewName: "AddBucketView")
