@@ -436,9 +436,9 @@ UIPopoverControllerDelegate,UINavigationControllerDelegate {
         dismiss(animated: true, completion: nil)
     }
     
-    @objc func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         KLog.d(tag: TAG, msg: "imagePickerController" )
-        let chosenImage = info["UIImagePickerControllerOriginalImage"] as! UIImage
+        let chosenImage = info[.originalImage] as! UIImage
         hideImageAttachButton(ishide: true)
         ivImage.image = chosenImage
         ivImage.isHidden = false

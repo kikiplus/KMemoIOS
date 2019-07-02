@@ -29,10 +29,6 @@
 		0003F03A217C388B00C3BDD8 /* SetNickNameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0003EF87217C378F00C3BDD8 /* SetNickNameView.swift */; };
 		0003F03B217C388B00C3BDD8 /* ShareListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0003EF88217C378F00C3BDD8 /* ShareListView.swift */; };
 		0003F03C217C388B00C3BDD8 /* PassWordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0003EF89217C378F00C3BDD8 /* PassWordView.swift */; };
-		0003F03D217C388B00C3BDD8 /* ConfigurationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0003EF8A217C378F00C3BDD8 /* ConfigurationView.swift */; };
-		0003F03E217C388B00C3BDD8 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0003EF8B217C378F00C3BDD8 /* MainView.swift */; };
-		0003F03F217C388B00C3BDD8 /* PDFViewerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0003EF8C217C378F00C3BDD8 /* PDFViewerView.swift */; };
-		0003F040217C388B00C3BDD8 /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0003EF8D217C378F00C3BDD8 /* ChatView.swift */; };
 		0003F041217C388B00C3BDD8 /* IntroView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0003EF8E217C378F00C3BDD8 /* IntroView.swift */; };
 		0003F042217C388B00C3BDD8 /* TutorialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0003EF8F217C378F00C3BDD8 /* TutorialView.swift */; };
 		0003F043217C388B00C3BDD8 /* SettingVIew.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0003EF90217C378F00C3BDD8 /* SettingVIew.swift */; };
@@ -154,10 +150,6 @@
 		0003EF87217C378F00C3BDD8 /* SetNickNameView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetNickNameView.swift; sourceTree = "<group>"; };
 		0003EF88217C378F00C3BDD8 /* ShareListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShareListView.swift; sourceTree = "<group>"; };
 		0003EF89217C378F00C3BDD8 /* PassWordView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PassWordView.swift; sourceTree = "<group>"; };
-		0003EF8A217C378F00C3BDD8 /* ConfigurationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfigurationView.swift; sourceTree = "<group>"; };
-		0003EF8B217C378F00C3BDD8 /* MainView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
-		0003EF8C217C378F00C3BDD8 /* PDFViewerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDFViewerView.swift; sourceTree = "<group>"; };
-		0003EF8D217C378F00C3BDD8 /* ChatView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
 		0003EF8E217C378F00C3BDD8 /* IntroView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntroView.swift; sourceTree = "<group>"; };
 		0003EF8F217C378F00C3BDD8 /* TutorialView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TutorialView.swift; sourceTree = "<group>"; };
 		0003EF90217C378F00C3BDD8 /* SettingVIew.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingVIew.swift; sourceTree = "<group>"; };
@@ -383,10 +375,6 @@
 				0003EF88217C378F00C3BDD8 /* ShareListView.swift */,
 				00A7E8FD21945E5B00E56D12 /* DBMgrView.swift */,
 				0003EF89217C378F00C3BDD8 /* PassWordView.swift */,
-				0003EF8A217C378F00C3BDD8 /* ConfigurationView.swift */,
-				0003EF8B217C378F00C3BDD8 /* MainView.swift */,
-				0003EF8C217C378F00C3BDD8 /* PDFViewerView.swift */,
-				0003EF8D217C378F00C3BDD8 /* ChatView.swift */,
 				0003EF8E217C378F00C3BDD8 /* IntroView.swift */,
 				0003EF8F217C378F00C3BDD8 /* TutorialView.swift */,
 				0003EF90217C378F00C3BDD8 /* SettingVIew.swift */,
@@ -738,14 +726,12 @@
 			files = (
 				0003F03B217C388B00C3BDD8 /* ShareListView.swift in Sources */,
 				0003F0A7217C3AF100C3BDD8 /* Comment.swift in Sources */,
-				0003F03D217C388B00C3BDD8 /* ConfigurationView.swift in Sources */,
 				0003F0AB217C3AF100C3BDD8 /* SettingCustomCell.swift in Sources */,
 				0003F039217C388B00C3BDD8 /* RankListView.swift in Sources */,
 				0003F053217C38B200C3BDD8 /* ScreenUtils.swift in Sources */,
 				0003F044217C388B00C3BDD8 /* WriteView.swift in Sources */,
 				0003F05C217C38BE00C3BDD8 /* IHttpReceive.swift in Sources */,
 				0003F037217C388B00C3BDD8 /* NoticeView.swift in Sources */,
-				0003F040217C388B00C3BDD8 /* ChatView.swift in Sources */,
 				0003F036217C388B00C3BDD8 /* WriteDetailView.swift in Sources */,
 				0003F056217C38B200C3BDD8 /* AppUtils.swift in Sources */,
 				00A7E8FC21945BA000E56D12 /* AppUpdateTask.swift in Sources */,
@@ -777,7 +763,6 @@
 				0003F031217C388B00C3BDD8 /* ShareDetailView.swift in Sources */,
 				0003F077217C3A0200C3BDD8 /* BasicPopup.swift in Sources */,
 				0003F04A217C38A600C3BDD8 /* MemoryUtils.swift in Sources */,
-				0003F03F217C388B00C3BDD8 /* PDFViewerView.swift in Sources */,
 				0003F0B0217C3AF100C3BDD8 /* PostData.swift in Sources */,
 				0003F049217C38A600C3BDD8 /* NetworkUtils.swift in Sources */,
 				0003F043217C388B00C3BDD8 /* SettingVIew.swift in Sources */,
@@ -803,7 +788,6 @@
 				0003F0AF217C3AF100C3BDD8 /* RankCustomCell.swift in Sources */,
 				0003F02E217C387C00C3BDD8 /* EventProtocol.swift in Sources */,
 				0003F0B1217C3AF100C3BDD8 /* Version.swift in Sources */,
-				0003F03E217C388B00C3BDD8 /* MainView.swift in Sources */,
 				0003F03C217C388B00C3BDD8 /* PassWordView.swift in Sources */,
 				0003F055217C38B200C3BDD8 /* ByteUtils.swift in Sources */,
 				0003F04B217C38A600C3BDD8 /* UserDefault.swift in Sources */,
