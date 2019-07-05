@@ -76,6 +76,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let deviceTokenString = deviceToken.reduce("", {$0 + String(format: "%02X", $1)})
         print("@@ APNS device token \(deviceTokenString)")
         KLog.d(tag: "AppDelegate", msg: "@@ APNS device token \(deviceTokenString)")
+        UserDefault.write(key: ContextUtils.KEY_USER_FCM, value: deviceTokenString)
     }
 
 

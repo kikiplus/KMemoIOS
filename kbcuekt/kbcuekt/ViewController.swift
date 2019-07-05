@@ -296,7 +296,7 @@ class ViewController: UIViewController , IHttpReceive , PopupProtocol {
         mobileUser.mVersionName = ContextUtils.VERSION_NAME
         mobileUser.mLanguage = AppUtils.getUserPhoneLanuage()
         mobileUser.mCountry = AppUtils.getUserPhoneLanuage()
-        mobileUser.mGcmToken = ""
+        mobileUser.mGcmToken = UserDefault.read(key: ContextUtils.KEY_USER_FCM)
         return mobileUser;
     }
     
